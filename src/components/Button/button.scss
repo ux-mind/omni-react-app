@@ -1,0 +1,20 @@
+.btn {
+  width: 190px;
+  height: 38px;
+  background: linear-gradient(91deg, #5054EE, #9F1EEE);
+  transform: skew(-20deg);
+  color: #FBFBFF;
+  border: none;
+  border-radius: 2.5px;
+
+  a {
+    width: 100%;
+    height: 38px;
+    color: #FBFBFF;
+    transform: skew(20deg);
+    font-family: 'Gilroy', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
