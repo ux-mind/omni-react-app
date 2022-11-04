@@ -1,20 +1,23 @@
 .btn {
-  width: 190px;
+  width: 185px;
   height: 38px;
   background: linear-gradient(91deg, #5054EE, #9F1EEE);
-  transform: skew(-20deg);
+  transform: skew(-15deg);
   color: #FBFBFF;
   border: none;
-  border-radius: 2.5px;
+  border-radius: 5px;
+  cursor: pointer;
 
-  a {
+  span {
     width: 100%;
     height: 38px;
     color: #FBFBFF;
-    transform: skew(20deg);
+    transform: skew(15deg);
     font-family: 'Gilroy', sans-serif;
+    font-size: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-transform: uppercase;
   }
 }

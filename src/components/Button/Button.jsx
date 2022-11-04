@@ -2,9 +2,9 @@ import PropTypes from 'prop-types';
 import './button.scss';
 
 const Button = ({ title, className }) => (
-  <div className={`btn ${className}`}>
-    <a href="/">{title}</a>
-  </div>
+  <button className={`btn ${className}`} type="button">
+    <span>{title}</span>
+  </button>
 );
 
 Button.propTypes = {

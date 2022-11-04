@@ -5,6 +5,7 @@
 
 * {
   margin: 0;
+  color: #FBFBFF;
 }
 
 body {
@@ -20,10 +21,26 @@ body {
   align-items: center;
   background-color: #0F0F0F;
 
-  h1 {
+  h1, h2 {
     font-family: "Poppins", sans-serif;
-    font-weight: bold;
-    color: wheat;
+    background: -webkit-linear-gradient(300deg, #5054EE, #9F1EEE);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  p {
+    font-family: "Poppins", sans-serif;
+    color: #FBFBFF;
+  }
+
+  h1 {
+    font-weight: 700;
+    font-size: 34px;
+  }
+
+  h2 {
+    font-weight: 500;
+    font-size: 30px;
   }
 
   a {
