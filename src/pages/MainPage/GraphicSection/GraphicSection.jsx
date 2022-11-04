@@ -57,7 +57,24 @@ const GraphicSection = () => (
               ))}
             </div>
           </div>
-          <div className="frame-description" />
+          <div className="frame-description">
+            <h3>2022 Super Bowl</h3>
+            <div className="description-container">
+              <div className="description-text-box">
+                <span>70,048</span>
+                <p>In Attendance</p>
+              </div>
+              <div className="description-text-box">
+                <span>111, 200, 000</span>
+                <p>Online</p>
+              </div>
+              <div className="description-text-box">
+                <span>*220, 000, 000</span>
+                <p>Not participating</p>
+              </div>
+              <span>*Only showing United States</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
