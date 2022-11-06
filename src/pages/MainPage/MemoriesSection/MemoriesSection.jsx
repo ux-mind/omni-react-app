@@ -19,7 +19,7 @@ const MemoriesSection = () => (
         <img src="/src/assets/phones/phone_2.png" alt="phone1 img" loading="lazy" />
       </div>
       <div className="text-box">
-        <h3>YOUR FAMILY'S FOREVER STATION NEVER FORGET A VOICE AGAIN</h3>
+        <h3>YOUR FAMILY&apos;S FOREVER STATION NEVER FORGET A VOICE AGAIN</h3>
         <p>
           OMNI gives every person the freedom to create a station,
           share it privately, and to save it for the next generation.

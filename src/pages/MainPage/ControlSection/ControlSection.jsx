@@ -12,7 +12,7 @@ const ControlSection = () => (
         <img className="control-coin" src="/src/assets/images/coin.png" alt="coin" />
         <p>
           CREATE STATION SUBSCRIPTIONS AND ENGAGE WITH YOUR FANS
-          THERE'S NO LIMIT TO THE NUMBER OF STATIONS YOU CAN CURATE
+          THERE&apos;S NO LIMIT TO THE NUMBER OF STATIONS YOU CAN CURATE
         </p>
       </div>
       <div className="control-img">
