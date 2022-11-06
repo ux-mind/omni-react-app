@@ -1,15 +1,17 @@
 .graphic-section {
   width: 100%;
+  height: 900px;
   margin-top: 375px;
 
   .background {
     padding: 0 60px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-image: url("/src/assets/backgroundLines.svg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: top;
   }
 
   &-container {
