@@ -1,4 +1,4 @@
-import './WorldBGSection.scss';
+import './worldBGSection.scss';
 
 const WorldBGSection = () => (
   <div className="map-section">
