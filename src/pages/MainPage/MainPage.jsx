@@ -7,6 +7,7 @@ import ChangingLifeSection from './ChangingLifeSection/ChangingLifeSection.jsx';
 import FutureSection from './FutureSection/FutureSection.jsx';
 import MemoriesSection from './MemoriesSection/MemoriesSection.jsx';
 import ControlSection from './ControlSection/ControlSection.jsx';
+import ExperienceSection from './ExperienceSection/ExperienceSection.jsx';
 
 const MainPage = () => (
   <main>
@@ -18,6 +19,7 @@ const MainPage = () => (
     <FutureSection />
     <MemoriesSection />
     <ControlSection />
+    <ExperienceSection />
   </main>
 );
 

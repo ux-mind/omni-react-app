@@ -1,0 +1,91 @@
+.experience-section {
+  max-width: 100%;
+  margin: 322px 0 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    .img-box {
+      width: 38%;
+      padding-left: 12vw;
+      background-image: url('/src/assets/backgrounds/backgroundLines_2.svg');
+      background-repeat: no-repeat;
+      background-size: 100% 78%;
+      background-position: bottom;
+    }
+
+    .logos-box {
+      position: absolute;
+      top: 143px;
+      width: 100%;
+      max-width: 400px;
+      height: 390px;
+
+      .first-logo {
+        position: absolute;
+        top: 5px;
+        left: -103px;
+        rotate: 12deg;
+        opacity: 0.8;
+      }
+
+      .second-logo {
+        position: absolute;
+        top: 66px;
+        left: -61px;
+        rotate: 337deg;
+      }
+
+      .third-logo {
+        position: absolute;
+        bottom: 90px;
+        right: 2px;
+        rotate: 10deg;
+        opacity: 0.8;
+      }
+
+      .fourth-logo {
+        position: absolute;
+        bottom: -12px;
+        right: 22px;
+        rotate: 333deg;
+      }
+    }
+
+    .text-box {
+      width: 45%;
+      max-width: 683px;
+      margin-top: 171px;
+      display: flex;
+      flex-direction: column;
+
+      p {
+        max-width: 500px;
+        margin: 11px 0;
+        padding-right: 25px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 160%;
+      }
+
+      h3 {
+        max-width: 500px;
+        padding-right: 25px;
+        font-style: normal;
+        font-size: 24px !important;
+        text-transform: capitalize;
+        line-height: 34px;
+        background: linear-gradient(91.43deg, #5054EE 0%, #9F1EEE 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
+}
