@@ -1,0 +1,98 @@
+.control {
+
+  &-section {
+    width: 100%;
+    margin: 295px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+      max-width: 1109px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    &-container {
+      width: 95%;
+      max-width: 1100px;
+      margin-top: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  &-text-box {
+    position: relative;
+    max-width: 400px;
+    margin: 65px 0 0 40px;
+
+    p {
+      position: relative;
+      font-weight: 500;
+      font-size: 24px;
+      text-transform: capitalize;
+      line-height: 34px;
+      background: linear-gradient(91.43deg, #5054EE 0%, #9F1EEE 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    img {
+      position: absolute;
+      top: -160px;
+      left: -100px;
+    }
+  }
+
+  &-img {
+    position: relative;
+
+    @media (max-width: 1400px) {
+      margin-right: 70px;
+    }
+
+    .first-logo {
+      position: absolute;
+      bottom: 158px;
+      left: -63px;
+      rotate: 357deg;
+    }
+
+    .second-logo {
+      position: absolute;
+      bottom: 79px;
+      left: -63px;
+      rotate: 336deg;
+    }
+
+    .third-logo {
+      position: absolute;
+      bottom: -23px;
+      left: -42px;
+      rotate: 7deg;
+    }
+
+    .fourth-logo {
+      position: absolute;
+      top: 366px;
+      right: -72px;
+      rotate: 41deg;
+    }
+
+    .fifth-logo {
+      position: absolute;
+      top: 261px;
+      right: -28px;
+      rotate: 344deg;
+    }
+
+    .sixth-logo {
+      position: absolute;
+      top: 231px;
+      right: -116px;
+      rotate: 25deg;
+    }
+  }
+}
