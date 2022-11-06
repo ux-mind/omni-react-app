@@ -2,7 +2,7 @@
 
   &-section {
     width: 100%;
-    margin: 295px auto;
+    margin: 295px auto 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -58,6 +58,7 @@
       bottom: 158px;
       left: -63px;
       rotate: 357deg;
+      opacity: 0.4;
     }
 
     .second-logo {
@@ -65,6 +66,7 @@
       bottom: 79px;
       left: -63px;
       rotate: 336deg;
+      opacity: 0.8;
     }
 
     .third-logo {
@@ -86,6 +88,7 @@
       top: 261px;
       right: -28px;
       rotate: 344deg;
+      opacity: 0.8;
     }
 
     .sixth-logo {
@@ -93,6 +96,7 @@
       top: 231px;
       right: -116px;
       rotate: 25deg;
+      opacity: 0.4;
     }
   }
 }
