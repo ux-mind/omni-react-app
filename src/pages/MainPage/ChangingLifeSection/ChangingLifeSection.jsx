@@ -14,7 +14,7 @@ const ChangingLifeSection = () => (
           <Logo size={40} />
           <Logo size={56} />
         </div>
-        <img src="/src/assets/phones/phone_1.png" alt="phone1 img" />
+        <img src="/src/assets/phones/phone_1.png" alt="phone1 img" loading="lazy" />
       </div>
       <div className="title-box">
         <p>ANYONE CAN CREATE, SHARE, LISTEN AND, MONETIZE ANY EXPERIENCE, ANYTIME.</p>
