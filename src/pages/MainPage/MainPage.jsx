@@ -5,6 +5,7 @@ import WorldBGSection from './WorldBGSection/WorldBGSection.jsx';
 import FacilitiesSection from './FacilitiesSection/FacilitiesSection.jsx';
 import ChangingLifeSection from './ChangingLifeSection/ChangingLifeSection.jsx';
 import FutureSection from './FutureSection/FutureSection.jsx';
+import MemoriesSection from './MemoriesSection/MemoriesSection.jsx';
 
 const MainPage = () => (
   <main>
@@ -14,6 +15,7 @@ const MainPage = () => (
     <FacilitiesSection />
     <ChangingLifeSection />
     <FutureSection />
+    <MemoriesSection />
   </main>
 );
 
