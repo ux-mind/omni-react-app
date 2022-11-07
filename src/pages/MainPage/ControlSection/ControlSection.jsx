@@ -9,7 +9,7 @@ const ControlSection = () => (
     </h2>
     <div className="control-section-container">
       <div className="control-text-box">
-        <img className="control-coin" src="/src/assets/images/coin.png" alt="coin" />
+        <img className="control-coin" src="/src/assets/images/coin.png" alt="coin" loading="lazy" />
         <p>
           CREATE STATION SUBSCRIPTIONS AND ENGAGE WITH YOUR FANS
           THERE&apos;S NO LIMIT TO THE NUMBER OF STATIONS YOU CAN CURATE

@@ -2,7 +2,7 @@ import './worldBGSection.scss';
 
 const WorldBGSection = () => (
   <div className="map-section">
-    <img className="map-background" src="/src/assets/backgrounds/worldMap.svg" alt="World map" />
+    <img className="map-background" src="/src/assets/backgrounds/worldMap.svg" alt="World map" loading="lazy" />
   </div>
 );
 
