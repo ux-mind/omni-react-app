@@ -1,0 +1,180 @@
+.bubblehouse-section {
+  width: 100%;
+  margin-top: 265px;
+
+  .background {
+    height: 745px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("/src/assets/backgrounds/backgroundLines_3.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100% 100%;
+  }
+
+  &-container {
+    margin-top: 128px;
+    width: 92%;
+    max-width: 1232px;
+    height: 415px;
+    display: flex;
+    justify-content: space-between;
+
+    .text-box {
+      position: relative;
+      width: 50%;
+      max-width: 563px;
+      margin-top: 95px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      img {
+        position: absolute;
+        top: -94px;
+        left: -44px;
+      }
+
+      h3 {
+        position: relative;
+        padding-right: 15px;
+        font-size: 24px !important;
+        line-height: 36px;
+        text-transform: uppercase !important;
+        background: -webkit-linear-gradient(300deg, #5054EE, #9F1EEE);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      span {
+        margin-top: 9px;
+        text-align: center;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        font-family: "Poppins", sans-serif;
+        background: -webkit-linear-gradient(300deg, #5054EE, #9F1EEE);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      p {
+        max-width: 302px;
+        margin-top: 24px;
+        text-align: center;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 160%;
+      }
+    }
+
+    .cards-box {
+      position: relative;
+      width: 50%;
+      max-width: 430px;
+      height: 386px;
+      backdrop-filter: blur(15px);
+      border-radius: 48px;
+      background: linear-gradient(87.3deg,
+              rgba(73, 93, 244, 0.05) -2.43%,
+              rgba(180, 113, 255, 0.05) 84.8%);
+
+      &::before {
+        position: absolute;
+        padding: 1.7px;
+        content: "";
+        inset: calc(0px - 1.7px);
+        border-radius: 48px;
+        background: linear-gradient(90deg, #4832F7, #9357EB, #F65CCB);
+        -webkit-mask: linear-gradient(90deg, #4832F7, #9357EB, #F65CCB) content-box,
+        linear-gradient(90deg, #4832F7, #9357EB, #F65CCB);
+        -webkit-mask-composite: xor;
+      }
+
+      .cards-frame {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 386px;
+
+        .first-logo {
+          position: absolute;
+          top: 215px;
+          left: -70px;
+          rotate: 332deg;
+        }
+
+        .second-logo {
+          position: absolute;
+          top: 135px;
+          left: -132px;
+          opacity: 0.8;
+
+          @media (max-width: 1200px) {
+            left: -5px;
+          }
+        }
+
+        .third-logo {
+          position: absolute;
+          top: 65px;
+          left: -68px;
+          rotate: 341deg;
+          opacity: 0.6;
+        }
+
+        .fourth-logo {
+          position: absolute;
+          top: 4px;
+          left: -112px;
+          rotate: 338deg;
+          opacity: 0.4;
+        }
+
+        .first-card {
+          position: absolute;
+          bottom: 61px;
+          left: 61px;
+        }
+
+        .second-card {
+          position: absolute;
+          bottom: 149px;
+          right: 61px;
+        }
+
+        .bubble-title {
+          display: flex;
+          align-items: center;
+          margin: 40px auto 21px;
+
+          h5 {
+            margin-left: 5px;
+            line-height: 29px;
+          }
+        }
+      }
+
+      .arrows-box {
+        width: 100%;
+        max-width: 210px;
+        height: 35px;
+        margin: 0 auto;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+
+        #left-arrow {
+
+        }
+
+        #right-arrow {
+          rotate: 180deg;
+        }
+      }
+    }
+  }
+}
