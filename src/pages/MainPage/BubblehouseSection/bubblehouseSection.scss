@@ -168,10 +168,11 @@
         justify-content: space-between;
 
         #left-arrow {
-
+          cursor: pointer;
         }
 
         #right-arrow {
+          cursor: pointer;
           rotate: 180deg;
         }
       }

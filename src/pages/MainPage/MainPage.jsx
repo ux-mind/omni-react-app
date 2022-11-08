@@ -9,6 +9,7 @@ import MemoriesSection from './MemoriesSection/MemoriesSection.jsx';
 import ControlSection from './ControlSection/ControlSection.jsx';
 import ExperienceSection from './ExperienceSection/ExperienceSection.jsx';
 import BubblehouseSection from './BubblehouseSection/BubblehouseSection.jsx';
+import FormSection from './FormSection/FormSection.jsx';
 
 const MainPage = () => (
   <main>
@@ -22,6 +23,7 @@ const MainPage = () => (
     <ControlSection />
     <ExperienceSection />
     <BubblehouseSection />
+    <FormSection />
   </main>
 );
 
