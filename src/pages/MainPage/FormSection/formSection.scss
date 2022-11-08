@@ -1,11 +1,15 @@
 .form-section {
   width: 100%;
-  margin-top: 237px;
+  margin: 237px 0 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: url("/src/assets/backgrounds/backgroundLines.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 
   h2 {
+    width: 90%;
     max-width: 707px;
     text-align: center;
   }
@@ -45,7 +49,13 @@
 
     &-box {
       max-width: 940px;
-      padding: 37px 200px 0;
+      padding: 37px 0 0;
+      width: 57%;
+      margin: 0 auto;
+
+      .margin-r {
+        margin-right: 10px;
+      }
 
       .group-inputs {
         display: flex;
@@ -53,6 +63,71 @@
 
         .input-box {
           max-width: 250px;
+        }
+      }
+
+      .checkbox-input {
+        margin: 29px 0;
+        display: flex;
+        align-items: center;
+
+        .personal-checkbox {
+          position: relative;
+          width: 20px;
+          height: 20px;
+          border-radius: 6px;
+          cursor: pointer;
+          background: linear-gradient(87.3deg,
+                  rgba(73, 93, 244, 0.05) -2.43%,
+                  rgba(180, 113, 255, 0.05) 84.8%);
+
+          &::before {
+            position: absolute;
+            padding: 1px;
+            content: "";
+            inset: calc(0px - 1px);
+            border-radius: 6px;
+            background: linear-gradient(90deg, #4832F7, #9357EB, #F65CCB);
+            -webkit-mask: linear-gradient(90deg, #4832F7, #9357EB, #F65CCB) content-box,
+            linear-gradient(90deg, #4832F7, #9357EB, #F65CCB);
+            -webkit-mask-composite: xor;
+          }
+        }
+
+        input {
+          visibility: hidden;
+        }
+
+        p {
+          margin-left: 10px;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 24px;
+        }
+      }
+
+      .center {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+
+      .square {
+        position: relative;
+        z-index: 1;
+        width: 100%!important;
+        max-width: 446px!important;
+        height: 48px!important;
+        transform: none!important;
+        border-radius: 8px!important;
+        margin: 10px auto 0;
+
+        span {
+          font-family: 'Poppins',sans-serif;
+          transform: none;
+          font-size: 16px;
+          text-transform: capitalize;
         }
       }
     }

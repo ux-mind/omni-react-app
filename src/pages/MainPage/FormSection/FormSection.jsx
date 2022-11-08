@@ -1,6 +1,7 @@
 import './formSection.scss';
 import Logo from '../../../assets/Logo.jsx';
 import Input from '../../../components/Input/Input.jsx';
+import Button from '../../../components/Button/Button.jsx';
 
 const itemsForDropdown = [
   {
@@ -13,6 +14,10 @@ const itemsForDropdown = [
   },
   {
     id: 3,
+    title: 'Listening',
+  },
+  {
+    id: 4,
     title: 'Partnering',
   },
 ];
@@ -27,12 +32,19 @@ const FormSection = () => (
       <div className="form-frame-box">
         <h4>Radio Waves Are Open</h4>
         <div className="group-inputs">
-          <Input title="First name" placeholder="First name" />
+          <Input className="margin-r" title="First name" placeholder="First name" />
           <Input title="Last name" placeholder="Last name" />
         </div>
         <Input type="dropdown" title="User type" placeholder="Interest" itemsForDropdown={itemsForDropdown} />
         <Input title="Email" placeholder="you@.com" />
         <Input type="text-area" title="Message" height={125} />
+        <div className="checkbox-input">
+          <div className="personal-checkbox" />
+          <p>You agree to our friendly privacy policy.</p>
+        </div>
+        <div className="center">
+          <Button className="square" title="Send" />
+        </div>
       </div>
       <Logo className="first-logo" size={40} />
       <Logo className="second-logo" size={30} />
