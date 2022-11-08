@@ -77,6 +77,9 @@
           height: 20px;
           border-radius: 6px;
           cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
           background: linear-gradient(87.3deg,
                   rgba(73, 93, 244, 0.05) -2.43%,
                   rgba(180, 113, 255, 0.05) 84.8%);
