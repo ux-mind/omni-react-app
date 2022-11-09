@@ -11,6 +11,7 @@ import ExperienceSection from './ExperienceSection/ExperienceSection.jsx';
 import BubblehouseSection from './BubblehouseSection/BubblehouseSection.jsx';
 import FormSection from './FormSection/FormSection.jsx';
 import PhoneOnlySection from './PhoneOnlySection/PhoneOnlySection.jsx';
+import DiversitySection from './DiversitySection/DiversitySection.jsx';
 
 const MainPage = () => (
   <main>
@@ -26,6 +27,7 @@ const MainPage = () => (
     <BubblehouseSection />
     <FormSection />
     <PhoneOnlySection />
+    <DiversitySection />
   </main>
 );
 

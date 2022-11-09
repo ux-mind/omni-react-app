@@ -1,0 +1,26 @@
+.diversity-section {
+  width: 100%;
+  max-width: 587px;
+  margin: 132px auto 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  h2 {
+    max-width: 360px;
+    font-weight: 600 !important;
+  }
+
+  p {
+    margin: 12px 0 16px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 29px;
+    color: #D6D6D6;
+  }
+
+  button {
+    text-transform: capitalize;
+  }
+}
