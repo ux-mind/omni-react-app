@@ -44,7 +44,7 @@ const FormSection = () => {
           <Input type="text-area" title="Message" height={125} />
           <div className="checkbox-input">
             <div className="personal-checkbox" onClick={() => setIsChecked(!isChecked)}>
-              {isChecked && <img src="/src/assets/icons/check.svg" alt="check" />}
+              {isChecked && <img src="/src/assets/icons/checkIcon.svg" alt="check" />}
             </div>
             <p>You agree to our friendly privacy policy.</p>
           </div>
