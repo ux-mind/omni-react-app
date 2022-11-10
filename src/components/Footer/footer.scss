@@ -12,7 +12,8 @@ footer {
     -webkit-text-fill-color: #FBFBFF !important;
   }
 
-  p {
+  p, a {
+    font-family: 'Poppins', sans-serif;
     max-width: 350px;
     font-style: normal;
     font-weight: 400;
@@ -22,7 +23,7 @@ footer {
   }
 
   ul {
-    margin-top: 30px;
+    margin: 32px 0;
     width: 100%;
     max-width: 66px;
     display: flex;

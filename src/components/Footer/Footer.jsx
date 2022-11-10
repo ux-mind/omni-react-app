@@ -33,6 +33,7 @@ const Footer = () => (
         </a>
       </li>
     </ul>
+    <a href="/">Privacy Policy</a>
   </footer>
 );
 
