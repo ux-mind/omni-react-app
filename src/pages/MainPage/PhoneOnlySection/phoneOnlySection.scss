@@ -6,10 +6,11 @@
   &-background {
     display: flex;
     justify-content: center;
+    padding-bottom: 50px;
     background-image: url("/src/assets/backgrounds/backgroundLines_4.svg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    background-position: center 110px;
+    background-position: center 87px;
   }
 
   &-container {
