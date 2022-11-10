@@ -33,7 +33,7 @@ const Footer = () => (
         </a>
       </li>
     </ul>
-    <a href="/">Privacy Policy</a>
+    <a href={import.meta.env.VITE_SOME_PRIVACY_POLICY_URL}>Privacy Policy</a>
   </footer>
 );
 

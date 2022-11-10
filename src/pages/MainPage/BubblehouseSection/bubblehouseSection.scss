@@ -1,21 +1,34 @@
 .bubblehouse-section {
   width: 100%;
-  margin-top: 265px;
+  margin-top: 296px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    margin-left: 65px;
+    font-style: normal;
+    font-weight: 400!important;
+    font-size: 30px!important;
+    line-height: 45px;
+    text-align: center;
+  }
 
   .background {
     height: 745px;
     width: 100%;
+    margin-top: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-image: url("/src/assets/backgrounds/backgroundLines_3.svg");
     background-repeat: no-repeat;
-    background-position: top;
-    background-size: 100% 100%;
+    background-position: right;
+    background-size: 96% 100%;
   }
 
   &-container {
-    margin-top: 128px;
+    margin-top: 140px;
     width: 92%;
     max-width: 1232px;
     height: 415px;
@@ -25,32 +38,24 @@
     .text-box {
       position: relative;
       width: 50%;
-      max-width: 563px;
-      margin-top: 95px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
-      img {
-        position: absolute;
-        top: -94px;
-        left: -44px;
-      }
+      max-width: 480px;
+      margin-top: 112px;
 
       h3 {
-        position: relative;
-        padding-right: 15px;
         font-size: 24px !important;
         line-height: 36px;
         text-transform: uppercase !important;
         background: -webkit-linear-gradient(300deg, #5054EE, #9F1EEE);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+
+        &:last-child {
+          margin-top: 16px;
+        }
       }
 
       span {
         margin-top: 9px;
-        text-align: center;
         font-weight: 500;
         font-size: 18px;
         line-height: 27px;
@@ -61,12 +66,11 @@
       }
 
       p {
-        max-width: 302px;
-        margin-top: 24px;
-        text-align: center;
+        max-width: 400px;
+        margin-top: 8px;
         font-weight: 500;
         font-size: 18px;
-        line-height: 160%;
+        line-height: 29px;
       }
     }
 
@@ -96,9 +100,14 @@
       .cards-frame {
         position: relative;
         display: flex;
-        flex-direction: column;
         align-items: center;
+        justify-content: center;
         height: 386px;
+
+        img {
+          width: 280px;
+          margin-left: -30px;
+        }
 
         .first-logo {
           position: absolute;
@@ -144,36 +153,6 @@
           position: absolute;
           bottom: 149px;
           right: 61px;
-        }
-
-        .bubble-title {
-          display: flex;
-          align-items: center;
-          margin: 40px auto 21px;
-
-          h5 {
-            margin-left: 5px;
-            line-height: 29px;
-          }
-        }
-      }
-
-      .arrows-box {
-        width: 100%;
-        max-width: 210px;
-        height: 35px;
-        margin: 0 auto;
-        display: flex;
-        align-items: flex-end;
-        justify-content: space-between;
-
-        #left-arrow {
-          cursor: pointer;
-        }
-
-        #right-arrow {
-          cursor: pointer;
-          rotate: 180deg;
         }
       }
     }

@@ -4,9 +4,9 @@ import Logo from '../../../assets/Logo.jsx';
 const MemoriesSection = () => (
   <div className="memories-section">
     <h2>
-      The most valuable memories are personal OMNI,
+      OMNI - timeless audio your family&apos;s forever station
       <br />
-      the free and open broadcast booth
+      OMNI, a free, open, and inclusive broadcast booth
     </h2>
     <div className="memories-section-container">
       <div className="img-box">
@@ -19,12 +19,15 @@ const MemoriesSection = () => (
         <img src="/src/assets/phones/phone_2.png" alt="phone1 img" loading="lazy" />
       </div>
       <div className="text-box">
-        <h3>YOUR FAMILY&apos;S FOREVER STATION NEVER FORGET A VOICE AGAIN</h3>
+        <h3>NEVER FORGET A VOICE AGAIN</h3>
         <p>
-          OMNI gives every person the freedom to create a station,
-          share it privately, and to save it for the next generation.
+          Everyone deserves the freedom to have their voice heard and preserved
         </p>
-        <h3>OMNI - TIMELESS AUDIO</h3>
+        <h3>
+          OMNI - TIMELESS AUDIO
+          <br />
+          YOUR FAMILY&apos;S FORVER STATION
+        </h3>
       </div>
     </div>
   </div>

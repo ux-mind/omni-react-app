@@ -1,6 +1,6 @@
 .future-section {
   width: 100%;
-  margin: 300px auto 50px;
+  margin: 298px auto 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,11 +8,13 @@
   h2 {
     max-width: 700px;
     text-align: center;
-    margin: 0 auto 0;
+    line-height: 50px;
   }
 
   img {
     max-width: 1417px;
+    margin-top: -46px;
     width: 95%;
+    min-height: 416px;
   }
 }

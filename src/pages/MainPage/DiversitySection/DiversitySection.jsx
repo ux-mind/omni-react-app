@@ -9,7 +9,7 @@ const DiversitySection = () => (
       THE OMNI WAY
     </h2>
     <p>Join the game and start a broadcast</p>
-    <Button title="download app" />
+    <Button title="Download app" />
   </div>
 );
 

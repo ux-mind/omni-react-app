@@ -4,9 +4,9 @@ import Logo from '../../../assets/Logo.jsx';
 const ChangingLifeSection = () => (
   <div className="changingLife-section">
     <h2>
-      We’re changing the game - with OMNI,
-      there are infinite voices to select from
-      infinite voices and infinite possibilities!
+      We’re changing the game
+      <br />
+      With OMNI, there are infinite voices and infinite possibilities.
     </h2>
     <div className="changingLife-section-container">
       <div className="img-box">
@@ -17,7 +17,11 @@ const ChangingLifeSection = () => (
         <img src="/src/assets/phones/phone_1.png" alt="phone1 img" loading="lazy" />
       </div>
       <div className="title-box">
-        <p>ANYONE CAN CREATE, SHARE, LISTEN AND, MONETIZE ANY EXPERIENCE, ANYTIME.</p>
+        <p>
+          ANYONE CAN CREATE, SHARE, LISTEN,
+          <br />
+          AND MONTETIZE
+        </p>
       </div>
     </div>
   </div>

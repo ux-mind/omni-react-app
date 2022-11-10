@@ -6,11 +6,11 @@ const MainSection = () => (
     <div className="main-section-container">
       <p>Diversity of voice, freedom of choice - The OMNI way.</p>
       <h1>
-        AUGMENTED AUDIO BRINGING RADIO INTO THE 21ST CENTURY
+        AUGMENTED AUDIO BRINGING RADIO
+        <br />
+        INTO THE 21ST CENTURY
       </h1>
       <p>
-        Let’s disrupt this old boys club together.
-        <br />
         Join the audio revolution!
       </p>
       <Button className="main-section-btn" title="radio us" />

@@ -35,9 +35,7 @@ const GraphicSection = () => (
     <div className="background">
       <div className="graphic-section-container">
         <h2>
-          Sports is not created for everybody.
-          <br />
-          The audio created is not for the majority.
+          The lack of audio innovation prevents sports from reacting more audience
         </h2>
 
         <div className="frame">
@@ -65,14 +63,14 @@ const GraphicSection = () => (
                 <p>In Attendance</p>
               </div>
               <div className="description-text-box">
-                <span>111, 200, 000</span>
+                <span>111,200,000</span>
                 <p>Online</p>
               </div>
               <div className="description-text-box">
-                <span>*220, 000, 000</span>
+                <span>*220,000,000</span>
                 <p>Not participating</p>
               </div>
-              <span>*Only showing United States</span>
+              <span>*United States Only</span>
             </div>
           </div>
         </div>

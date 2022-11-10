@@ -3,6 +3,11 @@ import Logo from '../../../assets/Logo.jsx';
 
 const ExperienceSection = () => (
   <div className="experience-section">
+    <h2>
+      The listener experience doesn&apos;t stop with the end of the broadcast
+      <br />
+      OMNI keeps the fun going long after the first broadcast
+    </h2>
     <div className="experience-section-container">
       <div className="img-box">
         <div className="logos-box">
@@ -15,14 +20,19 @@ const ExperienceSection = () => (
       </div>
       <div className="text-box">
         <h3>
-          THE EXPERIENCE DOESN&apos;T STOP
-          <br />
-          WITH THE END OF THE BROADCAST!
-          OMNI ENABLES CREATORS AND LISTENERS TO CONTINUE THE EXPERIENCE
+          RELIVE AND REPLAY CURATED REELS
         </h3>
         <p>
-          Never be left on the sidelines again. OMNI is giving everyone the VIP experience.
+          Step back in time and hear your favorite Moments.
+          Quickly share your curated Highlight Reels.
+          <br />
+          Easily Subscribe to and Engage with the Broadcaster.
         </p>
+        <h3>
+          NEVER BE LEFT ON THE SIDELINES AGAIN.
+          <br />
+          OMNI -  EVERYONE IS A VIP
+        </h3>
       </div>
     </div>
   </div>

@@ -1,12 +1,18 @@
 .experience-section {
   max-width: 100%;
-  margin: 322px 0 50px;
+  margin: 252px 0 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
 
+  h2 {
+    text-align: center;
+    line-height: 50px;
+  }
+
   &-container {
     position: relative;
+    margin-top: 63px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -61,7 +67,7 @@
     .text-box {
       width: 45%;
       max-width: 683px;
-      margin-top: 171px;
+      margin-top: 125px;
       display: flex;
       flex-direction: column;
 

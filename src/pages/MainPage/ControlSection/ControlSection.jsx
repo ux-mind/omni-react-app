@@ -4,16 +4,24 @@ import Logo from '../../../assets/Logo.jsx';
 const ControlSection = () => (
   <div className="control-section">
     <h2>
-      Control the subscriptions and engagements of each of your different stations.
-      Allowing creators the freedom to engage with different segments of listeners
+      Omni keeps the fun going long after the first broadcast
+      <br />
+      Create station subscriptions and engage with your fans
     </h2>
     <div className="control-section-container">
       <div className="control-text-box">
-        <img className="control-coin" src="/src/assets/images/coin.png" alt="coin" loading="lazy" />
+        <h3>
+          YOUR VOICE IS UNIQUE AND VALUABLE
+        </h3>
         <p>
-          CREATE STATION SUBSCRIPTIONS AND ENGAGE WITH YOUR FANS
-          THERE&apos;S NO LIMIT TO THE NUMBER OF STATIONS YOU CAN CURATE
+          Bring your perspective to life, and build your audio brand with the Professional Station
         </p>
+        <p>
+          Set your Station to Public, and start
+          <br />
+          Subscribing your Listeners.
+        </p>
+        <h3>OMNI - LIMITLESS AUDIO EVERYONE KNOWS YOUR VOICE</h3>
       </div>
       <div className="control-img">
         <Logo size={20} className="first-logo" />

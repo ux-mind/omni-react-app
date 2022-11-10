@@ -11,12 +11,13 @@
       max-width: 1109px;
       margin: 0 50px;
       text-align: center;
+      line-height: 50px;
     }
 
     &-container {
-      width: 95%;
-      max-width: 1100px;
-      margin-top: 50px;
+      width: 90%;
+      max-width: 1230px;
+      margin-top: 63px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -25,29 +26,38 @@
 
   &-text-box {
     position: relative;
-    max-width: 400px;
-    margin: 65px 0 0 40px;
+    margin-top: -65px;
+    max-width: 500px;
 
-    p {
-      position: relative;
-      font-weight: 500;
-      font-size: 24px;
-      text-transform: capitalize;
-      line-height: 34px;
+    h3 {
+      font-style: normal;
+      font-weight: 600!important;
+      font-size: 24px!important;
+      line-height: 36px;
+      text-transform: uppercase;
       background: linear-gradient(91.43deg, #5054EE 0%, #9F1EEE 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+
+      &:last-child {
+        margin-top: 15px;
+      }
     }
 
-    img {
-      position: absolute;
-      top: -160px;
-      left: -100px;
+    p {
+      margin-top: 8px;
+      max-width: 410px;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 29px;
     }
   }
 
   &-img {
     position: relative;
+    margin-right: 80px;
+
 
     @media (max-width: 1400px) {
       margin-right: 100px;
@@ -55,46 +65,46 @@
 
     .first-logo {
       position: absolute;
-      bottom: 158px;
-      left: -63px;
+      bottom: 148px;
+      left: -80px;
       rotate: 357deg;
       opacity: 0.4;
     }
 
     .second-logo {
       position: absolute;
-      bottom: 79px;
-      left: -63px;
+      bottom: 69px;
+      left: -80px;
       rotate: 336deg;
       opacity: 0.8;
     }
 
     .third-logo {
       position: absolute;
-      bottom: -23px;
-      left: -42px;
+      bottom: -32px;
+      left: -60px;
       rotate: 7deg;
     }
 
     .fourth-logo {
       position: absolute;
-      top: 366px;
-      right: -72px;
+      top: 376px;
+      right: -87px;
       rotate: 41deg;
     }
 
     .fifth-logo {
       position: absolute;
-      top: 261px;
-      right: -28px;
+      top: 271px;
+      right: -43px;
       rotate: 344deg;
       opacity: 0.8;
     }
 
     .sixth-logo {
       position: absolute;
-      top: 231px;
-      right: -116px;
+      top: 241px;
+      right: -132px;
       rotate: 25deg;
       opacity: 0.4;
     }

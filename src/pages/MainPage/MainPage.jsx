@@ -1,33 +1,37 @@
 import './mainPage.scss';
-import MainSection from './MainSection/MainSection.jsx';
-import GraphicSection from './GraphicSection/GraphicSection.jsx';
-import WorldBGSection from './WorldBGSection/WorldBGSection.jsx';
-import FacilitiesSection from './FacilitiesSection/FacilitiesSection.jsx';
-import ChangingLifeSection from './ChangingLifeSection/ChangingLifeSection.jsx';
-import FutureSection from './FutureSection/FutureSection.jsx';
-import MemoriesSection from './MemoriesSection/MemoriesSection.jsx';
-import ControlSection from './ControlSection/ControlSection.jsx';
-import ExperienceSection from './ExperienceSection/ExperienceSection.jsx';
-import BubblehouseSection from './BubblehouseSection/BubblehouseSection.jsx';
-import FormSection from './FormSection/FormSection.jsx';
-import PhoneOnlySection from './PhoneOnlySection/PhoneOnlySection.jsx';
-import DiversitySection from './DiversitySection/DiversitySection.jsx';
+import React, { Suspense } from 'react';
+
+const MainSection = React.lazy(() => import('./MainSection/MainSection.jsx'));
+const GraphicSection = React.lazy(() => import('./GraphicSection/GraphicSection.jsx'));
+const WorldBGSection = React.lazy(() => import('./WorldBGSection/WorldBGSection.jsx'));
+const FacilitiesSection = React.lazy(() => import('./FacilitiesSection/FacilitiesSection.jsx'));
+const ChangingLifeSection = React.lazy(() => import('./ChangingLifeSection/ChangingLifeSection.jsx'));
+const FutureSection = React.lazy(() => import('./FutureSection/FutureSection.jsx'));
+const MemoriesSection = React.lazy(() => import('./MemoriesSection/MemoriesSection.jsx'));
+const ControlSection = React.lazy(() => import('./ControlSection/ControlSection.jsx'));
+const ExperienceSection = React.lazy(() => import('./ExperienceSection/ExperienceSection.jsx'));
+const BubblehouseSection = React.lazy(() => import('./BubblehouseSection/BubblehouseSection.jsx'));
+const FormSection = React.lazy(() => import('./FormSection/FormSection.jsx'));
+const PhoneOnlySection = React.lazy(() => import('./PhoneOnlySection/PhoneOnlySection.jsx'));
+const DiversitySection = React.lazy(() => import('./DiversitySection/DiversitySection.jsx'));
 
 const MainPage = () => (
   <main>
-    <MainSection />
-    <GraphicSection />
-    <WorldBGSection />
-    <FacilitiesSection />
-    <ChangingLifeSection />
-    <FutureSection />
-    <MemoriesSection />
-    <ControlSection />
-    <ExperienceSection />
-    <BubblehouseSection />
-    <FormSection />
-    <PhoneOnlySection />
-    <DiversitySection />
+    <Suspense>
+      <MainSection />
+      <GraphicSection />
+      <WorldBGSection />
+      <FacilitiesSection />
+      <ChangingLifeSection />
+      <FutureSection />
+      <MemoriesSection />
+      <ControlSection />
+      <ExperienceSection />
+      <BubblehouseSection />
+      <FormSection />
+      <PhoneOnlySection />
+      <DiversitySection />
+    </Suspense>
   </main>
 );
 

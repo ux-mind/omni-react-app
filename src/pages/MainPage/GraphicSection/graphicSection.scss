@@ -1,6 +1,6 @@
 .graphic-section {
   width: 100%;
-  margin-top: 300px;
+  margin-top: 268px;
 
   .background {
     padding: 0 60px;
@@ -107,7 +107,7 @@
       .description {
 
         &-container {
-          min-height: 265px;
+          min-height: 250px;
           width: 336px;
           margin: 15px auto 0;
           padding: 25px 0 20px;
@@ -141,6 +141,7 @@
             text-align: center;
             font-weight: 400;
             font-size: 18px;
+            text-transform: capitalize;
 
             &:last-child {
               max-width: 232px;
@@ -153,6 +154,14 @@
           display: flex;
           flex-direction: column;
           align-items: center;
+
+          p {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 23px;
+            text-transform: capitalize;
+          }
         }
       }
     }
