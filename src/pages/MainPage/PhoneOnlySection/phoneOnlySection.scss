@@ -1,16 +1,16 @@
 .phoneOnly-section {
   width: 100%;
   height: 100%;
-  margin: 300px 0 50px;
+  margin: 287px 0 50px;
 
   &-background {
     display: flex;
     justify-content: center;
-    padding-bottom: 50px;
+    padding-bottom: 80px;
     background-image: url("/src/assets/backgrounds/backgroundLines_4.svg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    background-position: center 87px;
+    background-position: center 70px;
   }
 
   &-container {
