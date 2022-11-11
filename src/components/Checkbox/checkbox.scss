@@ -1,0 +1,47 @@
+.checkbox-input {
+  margin: 29px 0;
+  display: flex;
+  align-items: center;
+
+  .personal-checkbox {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(87.3deg,
+            rgba(73, 93, 244, 0.05) -2.43%,
+            rgba(180, 113, 255, 0.05) 84.8%);
+
+    &::before {
+      position: absolute;
+      padding: 1px;
+      content: "";
+      inset: calc(0px - 1px);
+      border-radius: 6px;
+      background: linear-gradient(90deg, #4832F7, #9357EB, #F65CCB);
+      -webkit-mask: linear-gradient(90deg, #4832F7, #9357EB, #F65CCB) content-box,
+      linear-gradient(90deg, #4832F7, #9357EB, #F65CCB);
+      -webkit-mask-composite: xor;
+    }
+  }
+
+  input {
+    visibility: hidden;
+  }
+
+  p {
+    margin-left: 10px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+
+    a {
+      text-decoration: underline !important;
+    }
+  }
+}

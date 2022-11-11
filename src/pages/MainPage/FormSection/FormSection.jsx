@@ -3,6 +3,7 @@ import { useState } from 'react';
 import Logo from '../../../assets/Logo.jsx';
 import Input from '../../../components/Input/Input.jsx';
 import Button from '../../../components/Button/Button.jsx';
+import Checkbox from '../../../components/Checkbox/Checkbox.jsx';
 
 const itemsForDropdown = [
   {
@@ -42,12 +43,7 @@ const FormSection = () => {
           <Input type="dropdown" title="User type" placeholder="Interest" itemsForDropdown={itemsForDropdown} />
           <Input title="Email" placeholder="you@.com" />
           <Input type="text-area" title="Message" height={125} />
-          <div className="checkbox-input">
-            <div className="personal-checkbox" onClick={() => setIsChecked(!isChecked)}>
-              {isChecked && <img src="/src/assets/icons/checkIcon.svg" alt="check" />}
-            </div>
-            <p>You agree to our friendly privacy policy.</p>
-          </div>
+          <Checkbox setIsChecked={setIsChecked} isChecked={isChecked} />
           <div className="center">
             <Button className="square" title="Send" />
           </div>

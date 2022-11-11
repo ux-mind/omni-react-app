@@ -1,0 +1,105 @@
+.comingSoon {
+
+  &-section {
+    margin: 120px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &-box{
+    width: 95%;
+    max-width: 1230px;
+    display: flex;
+    justify-content: space-between;
+
+    &-left {
+      width: 45%;
+
+      .form-frame {
+        position: relative;
+        width: 100%;
+        margin: 23px 0 0;
+        padding: 40px 0 56px;
+        max-width: 940px;
+        backdrop-filter: blur(15px);
+        border-radius: 33px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: linear-gradient(87.3deg,
+                rgba(73, 93, 244, 0.05) -2.43%,
+                rgba(180, 113, 255, 0.05) 84.8%);
+
+        &::before {
+          position: absolute;
+          padding: 1.7px;
+          content: "";
+          inset: calc(0px - 1.7px);
+          border-radius: 33px;
+          background: linear-gradient(90deg, #4832F7, #9357EB, #F65CCB);
+          -webkit-mask: linear-gradient(90deg, #4832F7, #9357EB, #F65CCB) content-box,
+          linear-gradient(90deg, #4832F7, #9357EB, #F65CCB);
+          -webkit-mask-composite: xor;
+        }
+
+        .input-sizing {
+          position: relative;
+          width: 80%;
+          margin-top: 17px;
+
+          p {
+            margin-top: 0;
+          }
+        }
+
+        .checkbox {
+          margin: 17px 0 26px;
+        }
+
+        .btn-sizing{
+          position: relative;
+          width: 80%;
+          height: 48px;
+          border-radius: 8px;
+          transform: none !important;
+
+          span {
+            transform: none !important;
+            text-transform: none;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+          }
+        }
+      }
+
+      p {
+        margin-top: 10px;
+        line-height: 32px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        color: #D6D6D6 !important;
+      }
+    }
+
+    &-right {
+      width: 40.5%;
+
+      h1 {
+        font-style: normal;
+        font-weight: 700 !important;
+        font-size: 64px !important;
+        line-height: 80px;
+        text-transform: uppercase;
+        
+        @media (max-width: 1250px) {
+          font-size: 5vw !important;
+          line-height: 60px;
+        }
+      }
+    }
+  }
+}
