@@ -4,11 +4,21 @@
   border-radius: 50%;
   background-color: #F2F2F2;
 
+  @media (max-width: 550px) {
+    width: 5px;
+    height: 5px;
+  }
+
   &-box {
     margin-top: 49px;
     height: 28px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @media (max-width: 550px) {
+      margin-top: 33px;
+      height: 18px;
+    }
   }
 }

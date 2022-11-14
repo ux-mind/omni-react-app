@@ -23,6 +23,11 @@
   border-radius: 50%;
   background-color: black;
 
+  @media (max-width: 550px) {
+    width: 2px;
+    height: 2px;
+  }
+
   &-big {
     position: absolute;
     z-index: 2;
@@ -30,6 +35,11 @@
     height: 16px;
     border-radius: 50%;
     background-color: #0F0F0F;
+
+    @media (max-width: 550px) {
+      width: 10px;
+      height: 10px;
+    }
   }
 }
 
@@ -45,11 +55,21 @@
   align-items: center;
   overflow: clip;
 
+  @media (max-width: 550px) {
+    width: 95px;
+    height: 40px;
+    border-radius: 3px;
+  }
+
   &-box {
     height: 127.5px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @media (max-width: 550px) {
+      height: 82.5px;
+    }
   }
 
   span {
@@ -57,6 +77,10 @@
     font-size: 102.069px;
     letter-spacing: -0.085em;
     margin-left: -10px;
+
+    @media (max-width: 550px) {
+      font-size: 66px;
+    }
   }
 
   &-top {
@@ -64,26 +88,51 @@
 
     span {
       top: 38px;
+
+      @media (max-width: 550px) {
+        top: 19px;
+      }
     }
 
     &-dot-big-first {
       left: -9px;
       bottom: -10px;
+
+      @media (max-width: 550px) {
+        left: -6px;
+        bottom: -6px;
+      }
     }
 
     &-dot-big-second {
       right: -9px;
       bottom: -10px;
+
+      @media (max-width: 550px) {
+        right: -6px;
+        bottom: -6px;
+      }
     }
 
     &-dot-first {
       left: 10px;
       bottom: 1px;
+
+
+      @media (max-width: 550px) {
+        left: 5px;
+        bottom: 2px;
+      }
     }
 
     &-dot-second {
       right: 10px;
       bottom: 1px;
+
+      @media (max-width: 550px) {
+        right: 5px;
+        bottom: 2px;
+      }
     }
   }
 
@@ -92,26 +141,50 @@
 
     span {
       top:-30px;
+
+      @media (max-width: 550px) {
+        top: -24px;
+      }
     }
 
     &-dot-big-first {
       left: -9px;
       top: -10px;
+
+      @media (max-width: 550px) {
+        left: -6px;
+        top: -5px;
+      }
     }
 
     &-dot-big-second {
       right: -9px;
       top: -10px;
+
+      @media (max-width: 550px) {
+        right: -6px;
+        top: -5px;
+      }
     }
 
     &-dot-first {
       left: 10px;
       top: 2px;
+
+      @media (max-width: 550px) {
+        left: 5px;
+        top: 2px;
+      }
     }
 
     &-dot-second {
       right: 10px;
       top: 2px;
+
+      @media (max-width: 550px) {
+        right: 5px;
+        top: 2px;
+      }
     }
   }
 
