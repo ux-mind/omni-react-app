@@ -1,0 +1,16 @@
+.counter {
+  margin-top: 16px;
+
+  p {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  &-box {
+    margin-top: 9px;
+    width: 489px;
+    height: 180px;
+    display: flex;
+    justify-content: space-between;
+  }
+}

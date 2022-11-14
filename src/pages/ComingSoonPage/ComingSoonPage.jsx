@@ -3,6 +3,7 @@ import { useState } from 'react';
 import Input from '../../components/Input/Input.jsx';
 import Checkbox from '../../components/Checkbox/Checkbox.jsx';
 import Button from '../../components/Button/Button.jsx';
+import Counter from '../../components/Counter/Counter.jsx';
 
 const itemsForDropdown = [
   {
@@ -61,6 +62,7 @@ const ComingSoonPage = () => {
         </div>
         <div className="comingSoon-box-right">
           <h1>Newchip Investor Day Presentation</h1>
+          <Counter />
         </div>
       </div>
     </main>
