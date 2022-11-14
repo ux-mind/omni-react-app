@@ -14,8 +14,9 @@ const Footer = () => (
         <img src="/src/assets/icons/mailIcon.svg" alt="mail" />
         <input type="email" name="email" placeholder="Enter your email" />
       </div>
-      <Button title="Submit" />
+      <Button className="footer-btn" title="Submit" />
     </div>
+    <Button className="footer-btn-second" title="Submit" />
     <p>
       OMNI is a time capsule that will
       preserve and protect the most cherished

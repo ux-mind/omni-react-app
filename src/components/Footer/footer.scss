@@ -6,6 +6,11 @@ footer {
   align-items: center;
   text-align: center !important;
 
+  @media (max-width: 700px) {
+    width: 80%;
+    margin: 176px 0 40px;
+  }
+
   h2 {
     font-size: 24px!important;
     line-height: 39px!important;
@@ -32,6 +37,32 @@ footer {
 
   .footer {
 
+    &-btn {
+      span {
+        text-transform: none;
+      }
+
+      @media (max-width: 600px) {
+        display: none;
+      }
+
+      &-second {
+        display: none;
+        margin-bottom: 50px;
+        height: 60px;
+        width: 60%;
+
+        @media (max-width: 600px) {
+          display: block;
+        }
+
+        span {
+          font-size: 18px;
+          text-transform: none;
+        }
+      }
+    }
+
     &-separate {
       width: 80%;
       max-width: 1232px;
@@ -50,6 +81,10 @@ footer {
       align-items: center;
       border-radius: 12px;
       background: rgba(154, 154, 154, 0.2);
+
+      @media (max-width: 600px) {
+        margin: 40px 0 32px;
+      }
 
       .btn {
         width: 140px;
