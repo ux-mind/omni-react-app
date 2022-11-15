@@ -6,10 +6,12 @@
 * {
   margin: 0;
   color: #FBFBFF;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
   min-width: 320px;
+  background-color: #0F0F0F;
 }
 
 #root {
@@ -19,7 +21,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #0F0F0F;
 
   h1, h2, h3, h4, h5 {
     font-family: "Poppins", sans-serif;
@@ -74,5 +75,12 @@ body {
 
   li {
     list-style-type: none;
+  }
+
+  .error-input {
+
+    &::before {
+      background: red !important;
+    }
   }
 }

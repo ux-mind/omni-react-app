@@ -1,14 +1,22 @@
 import './counter.scss';
 import { useEffect, useState } from 'react';
+import moment from 'moment';
 import CounterField from './CounterField/CounterField.jsx';
 import Separator from './Separator/Separator.jsx';
 
+const countTime = () => {
+  const dateNow = moment().utcOffset('-05:00').format();
+  const dateEnd = moment('2022-11-21T12:55:00+03:00');
+
+  return {
+    days: dateEnd.diff(dateNow, 'days'),
+    hours: dateEnd.diff(dateNow, 'hours') % 24,
+    minutes: dateEnd.diff(dateNow, 'minutes') % 60,
+  };
+};
+
 const Counter = () => {
-  const [dateCount, setDateCount] = useState({
-    days: 5,
-    hours: 19,
-    minutes: 38,
-  });
+  const [dateCount, setDateCount] = useState(countTime());
   const [prevDateCount, setPrevDateCount] = useState(dateCount);
 
   const countDate = () => {

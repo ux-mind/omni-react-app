@@ -1,9 +1,9 @@
+import { Link } from 'react-router-dom';
 import LogoWithText from '../../assets/LogoWithText.jsx';
 import './header.scss';
 import LinkedinIcon from '../../assets/icons/LinkedinIcon.jsx';
 import TwitterIcon from '../../assets/icons/TwitterIcon.jsx';
 import Button from '../Button/Button.jsx';
-import { Link } from 'react-router-dom';
 import { COMING_SOON_ROUTE, MAIN_ROUTE } from '../../utils/constants.js';
 
 /* eslint-disable jsx-a11y/control-has-associated-label */
@@ -15,8 +15,8 @@ const Header = () => (
       </Link>
 
       <ul className="header-list">
-        <li><a href="/"><LinkedinIcon /></a></li>
-        <li><a href="/"><TwitterIcon /></a></li>
+        <li><a href="https://www.linkedin.com/in/be-the-ball/"><LinkedinIcon /></a></li>
+        <li><a href="https://twitter.com/omnibroadcast"><TwitterIcon /></a></li>
         <Link to={COMING_SOON_ROUTE}>
           <Button className="header-btn" title="Download the app" />
         </Link>
