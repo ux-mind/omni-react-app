@@ -1,6 +1,5 @@
 import './checkbox.scss';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
 
 const Checkbox = ({ isChecked, setIsChecked, className }) => (
   <div className={`checkbox-input ${className}`}>
@@ -9,9 +8,9 @@ const Checkbox = ({ isChecked, setIsChecked, className }) => (
     </div>
     <p>
       You agree to our friendly&nbsp;
-      <Link to="/">
+      <a href={import.meta.env.VITE_SOME_PRIVACY_POLICY_URL || '/'}>
         privacy policy.
-      </Link>
+      </a>
     </p>
   </div>
 );

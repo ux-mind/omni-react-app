@@ -15,8 +15,8 @@ const Header = () => (
       </Link>
 
       <ul className="header-list">
-        <li><a href="https://www.linkedin.com/in/be-the-ball/"><LinkedinIcon /></a></li>
-        <li><a href="https://twitter.com/omnibroadcast"><TwitterIcon /></a></li>
+        <li><a href={import.meta.env.VITE_SOME_LINKEDIN_URL || '/'}><LinkedinIcon /></a></li>
+        <li><a href={import.meta.env.VITE_SOME_TWITTER_URL || '/'}><TwitterIcon /></a></li>
         <Link to={COMING_SOON_ROUTE}>
           <Button className="header-btn" title="Download the app" />
         </Link>
