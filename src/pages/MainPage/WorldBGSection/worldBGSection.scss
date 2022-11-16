@@ -3,6 +3,10 @@
   &-section {
     margin: 66px auto 200px;
     width: 100%;
+
+    @media (max-width: 920px) {
+      margin: 120px auto;
+    }
   }
 
   &-background {
