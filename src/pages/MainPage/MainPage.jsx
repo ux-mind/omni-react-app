@@ -1,5 +1,5 @@
 import './mainPage.scss';
-import { lazy } from 'react';
+import { lazy, Suspense } from 'react';
 
 const MainSection = lazy(() => import('./MainSection/MainSection.jsx'));
 const GraphicSection = lazy(() => import('./GraphicSection/GraphicSection.jsx'));
@@ -17,19 +17,21 @@ const DiversitySection = lazy(() => import('./DiversitySection/DiversitySection.
 
 const MainPage = () => (
   <main>
-    <MainSection />
-    <GraphicSection />
-    <WorldBGSection />
-    <FacilitiesSection />
-    <ChangingLifeSection />
-    <FutureSection />
-    <MemoriesSection />
-    <ControlSection />
-    <ExperienceSection />
-    <BubblehouseSection />
-    <FormSection />
-    <PhoneOnlySection />
-    <DiversitySection />
+    <Suspense>
+      <MainSection />
+      <GraphicSection />
+      <WorldBGSection />
+      <FacilitiesSection />
+      <ChangingLifeSection />
+      <FutureSection />
+      <MemoriesSection />
+      <ControlSection />
+      <ExperienceSection />
+      <BubblehouseSection />
+      <FormSection />
+      <PhoneOnlySection />
+      <DiversitySection />
+    </Suspense>
   </main>
 );
 

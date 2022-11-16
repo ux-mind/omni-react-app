@@ -23,6 +23,11 @@
     &-number {
       width: 100%;
       margin-top: 18px;
+
+      @media (max-width: 600px) {
+        font-size: 160px;
+        line-height: 160px;
+      }
     }
 
     &-info {
@@ -30,6 +35,11 @@
       margin: 0 0 45px !important;
       font-size: 8vw!important;
       line-height: 128px!important;
+      
+      @media (max-width: 600px) {
+        font-size: 40px !important;
+        line-height: 48px !important;
+      }
     }
 
     &-btn {

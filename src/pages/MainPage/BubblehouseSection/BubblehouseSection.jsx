@@ -20,6 +20,7 @@ const BubblehouseSection = () => (
         <div className="cards-box">
           <div className="cards-frame">
             <img src="/src/assets/images/coin.png" alt="coin" />
+
             <Logo className="first-logo" size={55} />
             <Logo className="second-logo" size={40} />
             <Logo className="third-logo" size={30} />
