@@ -89,10 +89,10 @@
           width: 80%;
           height: 48px;
           border-radius: 8px;
-          transform: none !important;
+          transform: skew(0deg) !important;
 
           span {
-            transform: none !important;
+            transform: skew(0deg) !important;
             text-transform: none;
             font-style: normal;
             font-weight: 500;

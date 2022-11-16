@@ -1,4 +1,5 @@
 .btn {
+  position: relative;
   width: 185px;
   height: 38px;
   background: linear-gradient(91deg, #5054EE, #9F1EEE);
@@ -6,6 +7,32 @@
   border: none;
   border-radius: 2.7px;
   cursor: pointer;
+
+  &:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 2.7px;
+    content: '';
+    width: 100%;
+    height: inherit;
+    opacity: 0;
+    background: linear-gradient(91deg, #9F1EEE, #5054EE);
+    transition: 200ms linear;
+  }
+
+  &:hover {
+    &:before {
+      opacity: 1;
+    }
+  }
+
+  &:active {
+    &:before {
+      opacity: 0.1;
+    }
+  }
 
   span {
     width: 100%;
