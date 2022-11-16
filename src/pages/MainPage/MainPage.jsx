@@ -18,12 +18,14 @@ const DiversitySection = lazy(() => import('./DiversitySection/DiversitySection.
 const MainPage = () => (
   <main>
     <Suspense>
+      //animated
       <MainSection />
       <GraphicSection />
       <WorldBGSection />
       <FacilitiesSection />
       <ChangingLifeSection />
       <FutureSection />
+      //animated
       <MemoriesSection />
       <ControlSection />
       <ExperienceSection />

@@ -12,6 +12,12 @@
     background-repeat: no-repeat;
     background-position: top;
     background-size: 100% 100%;
+
+    @media (max-width: 870px) {
+      background-size: contain;
+      padding: 0;
+      height: auto;
+    }
   }
 
   &-container {
@@ -20,6 +26,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media (max-width: 870px) {
+      height: auto;
+    }
 
     .frame {
       position: relative;
@@ -35,6 +45,19 @@
       background: linear-gradient(87.3deg,
               rgba(73, 93, 244, 0.05) -2.43%,
               rgba(180, 113, 255, 0.05) 84.8%);
+
+      @media (max-width: 870px) {
+        width: auto;
+        height: auto;
+        padding: 60px 40px 60px;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      @media (max-width: 500px) {
+        padding: 40px 15px 50px;
+        width: 85%;
+      }
 
       &::before {
         position: absolute;
@@ -52,6 +75,10 @@
         position: relative;
         height: 355px;
         width: 384px;
+
+        @media (max-width: 500px) {
+          width: 320px;
+        }
       }
 
       &-graph-info {
@@ -72,6 +99,10 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
+
+        @media (max-width: 870px) {
+          height: 280px;
+        }
 
         .column {
           display: flex;
@@ -98,6 +129,10 @@
         position: relative;
         height: 322px;
         max-width: 336px;
+
+        @media (max-width: 870px) {
+          margin-top: 50px;
+        }
 
         h3 {
           text-align: center;
@@ -170,5 +205,14 @@
   h2 {
     max-width: 700px;
     text-align: center;
+
+    @media (max-width: 870px) {
+      max-width: 80%;
+    }
+
+    @media (max-width: 500px) {
+      font-size: 24px !important;
+      line-height: 32px;
+    }
   }
 }

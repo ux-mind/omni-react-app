@@ -7,6 +7,10 @@
     margin-right: 5px;
   }
 
+  @media (max-width: 500px) {
+    margin-right: 0 !important;
+  }
+
   span {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
@@ -16,6 +20,10 @@
 
   .graph {
     width: 18px;
+
+    @media (max-width: 500px) {
+      width: 13px;
+    }
   }
 
   .blue {

@@ -1,4 +1,5 @@
 import './graphicSection.scss';
+import { useEffect } from 'react';
 import GraphInfo from '../../../components/GraphInfo/GraphInfo.jsx';
 import TwoGraphs from '../../../components/Graphs/TwoGraphs.jsx';
 
@@ -78,5 +79,4 @@ const GraphicSection = () => (
     </div>
   </div>
 );
-
 export default GraphicSection;
