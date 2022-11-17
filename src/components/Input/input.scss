@@ -6,6 +6,10 @@
     flex-direction: column;
     width: 100%;
 
+    @media (max-width: 450px) {
+      margin-top: 15px;
+    }
+
     span {
       margin-bottom: 5px;
       font-family: 'Poppins', sans-serif;

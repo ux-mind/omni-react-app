@@ -4,7 +4,7 @@ import { useRef, useState } from 'react';
 import * as EmailValidator from 'email-validator';
 import DropdownInput from './DropdownInput/DropdownInput.jsx';
 
-const Input = ({ className, title, placeholder, type = 'input', itemsForDropdown, height }) => {
+const Input = ({ className = '', title, placeholder, type = 'input', itemsForDropdown, height }) => {
   const [email, setEmail] = useState('');
   const emailRef = useRef();
 

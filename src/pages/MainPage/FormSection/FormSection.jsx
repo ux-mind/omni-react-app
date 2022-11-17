@@ -36,10 +36,19 @@ const FormSection = () => {
       <div className="form-frame">
         <div className="form-frame-box">
           <h4>Radio Waves Are Open</h4>
-          <div className="group-inputs">
-            <Input className="margin-r" title="First name" placeholder="First name" />
-            <Input title="Last name" placeholder="Last name" />
-          </div>
+          {window.innerWidth <= 450 ? (
+            <>
+              <Input className="margin-r" title="First name" placeholder="First name" />
+              <Input title="Last name" placeholder="Last name" />
+            </>
+          )
+            : (
+              <div className="group-inputs">
+                <Input className="margin-r" title="First name" placeholder="First name" />
+                <Input title="Last name" placeholder="Last name" />
+              </div>
+            )}
+
           <Input type="dropdown" title="User type" placeholder="Interest" itemsForDropdown={itemsForDropdown} />
           <Input title="Email" placeholder="you@.com" />
           <Input type="text-area" title="Message" height={125} />

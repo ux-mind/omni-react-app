@@ -12,6 +12,11 @@
     width: 90%;
     max-width: 707px;
     text-align: center;
+
+    @media (max-width: 600px) {
+      font-size: 24px !important;
+      line-height: 32px;
+    }
   }
 
   .form-frame {
@@ -38,6 +43,15 @@
       -webkit-mask-composite: xor;
     }
 
+    @media (max-width: 600px) {
+      width: 95%;
+    }
+
+    @media (max-width: 450px) {
+      height: inherit;
+      padding: 0 0 50px;
+    }
+
     h4 {
       font-weight: 700;
       font-size: 34px;
@@ -45,6 +59,11 @@
       text-align: center;
       letter-spacing: -0.02em;
       color: #FBFBFF;
+
+      @media (max-width: 600px) {
+        font-size: 24px !important;
+        line-height: 32px;
+      }
     }
 
     &-box {
@@ -52,6 +71,10 @@
       padding: 37px 0 0;
       width: 57%;
       margin: 0 auto;
+
+      @media (max-width: 920px) {
+        width: 80%;
+      }
 
       .margin-r {
         margin-right: 10px;
@@ -96,6 +119,10 @@
       top: 178px;
       left: 52px;
       opacity: 0.8;
+
+      @media (max-width: 700px) {
+        z-index: -1;
+      }
     }
 
     .second-logo {
@@ -104,6 +131,10 @@
       left: 123px;
       rotate: 349deg;
       opacity: 0.6;
+
+      @media (max-width: 700px) {
+        z-index: -1;
+      }
     }
 
     .third-logo {
@@ -112,6 +143,10 @@
       left: 29px;
       rotate: 6deg;
       opacity: 0.4;
+
+      @media (max-width: 700px) {
+        z-index: -1;
+      }
     }
   }
 }
