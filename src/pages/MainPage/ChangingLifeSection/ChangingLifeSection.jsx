@@ -1,5 +1,5 @@
 import './changingLifeSection.scss';
-import Logo from '../../../assets/Logo.jsx';
+import Logo from '../../../assetsJSX/Logo.jsx';
 
 const ChangingLifeSection = () => (
   <div className="changingLife-section">
@@ -14,7 +14,7 @@ const ChangingLifeSection = () => (
           <Logo size={40} />
           <Logo size={56} />
         </div>
-        <img src="/src/assets/phones/phone_1.png" alt="phone1 img" loading="lazy" />
+        <img src="/assets/phones/phone_1.png" alt="phone1 img" loading="lazy" />
       </div>
       <div className="title-box">
         <p>

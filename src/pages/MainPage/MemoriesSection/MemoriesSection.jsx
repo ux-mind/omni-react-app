@@ -1,5 +1,5 @@
 import './memoriesSection.scss';
-import Logo from '../../../assets/Logo.jsx';
+import Logo from '../../../assetsJSX/Logo.jsx';
 
 const MemoriesSection = () => (
   <div className="memories-section">
@@ -16,7 +16,7 @@ const MemoriesSection = () => (
           <Logo size={40} className="third-logo" />
           <Logo size={60} className="fourth-logo" />
         </div>
-        <img src="/src/assets/phones/phone_2.png" alt="phone1 img" loading="lazy" />
+        <img src="/assets/phones/phone_2.png" alt="phone1 img" loading="lazy" />
       </div>
       <div className="text-box">
         <h3>NEVER FORGET A VOICE AGAIN</h3>

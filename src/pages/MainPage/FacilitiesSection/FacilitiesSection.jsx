@@ -31,7 +31,7 @@ const facilitiesData = [
 const FacilitiesSection = () => (
   <div className="facilities-section">
     <div className="facilities-section-container">
-      <img src="/src/assets/facilities.svg" alt="Facilities Img" loading="lazy" />
+      <img src="/assets/facilities.svg" alt="Facilities Img" loading="lazy" />
       <ul className="facilities-section-list">
         {facilitiesData.map(({ id, title, description }) => (
           <li key={id}>

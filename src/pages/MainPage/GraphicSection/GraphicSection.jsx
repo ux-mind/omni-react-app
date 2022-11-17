@@ -50,7 +50,7 @@ const GraphicSection = () => (
                 <div key={id} className="column">
                   <TwoGraphs percentages={percentages} heights={heights} />
                   <div className="img-box">
-                    <img src={`/src/assets/teamLogos/team_${id}.png`} alt="team_logo" />
+                    <img src={`/assets/teamLogos/team_${id}.png`} alt="team_logo" />
                   </div>
                 </div>
               ))}
@@ -58,20 +58,22 @@ const GraphicSection = () => (
           </div>
           <div className="frame-description">
             <h3>2022 Super Bowl</h3>
-            <div className="description-container">
-              <div className="description-text-box">
-                <span>70,048</span>
-                <p>In Attendance</p>
+            <div>
+              <div className="description-container">
+                <div className="description-text-box">
+                  <span>70,048</span>
+                  <p>In Attendance</p>
+                </div>
+                <div className="description-text-box">
+                  <span>111,200,000</span>
+                  <p>Online</p>
+                </div>
+                <div className="description-text-box">
+                  <span>*220,000,000</span>
+                  <p>Not participating</p>
+                </div>
+                <span>*United States Only</span>
               </div>
-              <div className="description-text-box">
-                <span>111,200,000</span>
-                <p>Online</p>
-              </div>
-              <div className="description-text-box">
-                <span>*220,000,000</span>
-                <p>Not participating</p>
-              </div>
-              <span>*United States Only</span>
             </div>
           </div>
         </div>

@@ -11,7 +11,7 @@ const Footer = () => (
     </h2>
     <div className="footer-input-box">
       <div className="input-with-icon">
-        <img src="/src/assets/icons/mailIcon.svg" alt="mail" />
+        <img src="/assets/icons/mailIcon.svg" alt="mail" />
         <input type="email" name="email" placeholder="Enter your email" />
       </div>
       <Button className="footer-btn" title="Submit" />
@@ -25,12 +25,12 @@ const Footer = () => (
     <ul>
       <li>
         <a href="/">
-          <img src="/src/assets/icons/linkedIdColorizedIcon.svg" alt="linkedin" />
+          <img src="/assets/icons/linkedIdColorizedIcon.svg" alt="linkedin" />
         </a>
       </li>
       <li>
         <a href="/">
-          <img src="/src/assets/icons/twitterColorizedIcon.svg" alt="twitter" />
+          <img src="/assets/icons/twitterColorizedIcon.svg" alt="twitter" />
         </a>
       </li>
     </ul>

@@ -1,5 +1,5 @@
 import './bubblehouseSection.scss';
-import Logo from '../../../assets/Logo.jsx';
+import Logo from '../../../assetsJSX/Logo.jsx';
 
 const BubblehouseSection = () => (
   <div className="bubblehouse-section">
@@ -19,7 +19,7 @@ const BubblehouseSection = () => (
         </div>
         <div className="cards-box">
           <div className="cards-frame">
-            <img src="/src/assets/images/coin.png" alt="coin" />
+            <img src="/assets/images/coin.png" alt="coin" />
 
             <Logo className="first-logo" size={55} />
             <Logo className="second-logo" size={40} />

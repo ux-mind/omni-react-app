@@ -1,5 +1,5 @@
 import './experienceSection.scss';
-import Logo from '../../../assets/Logo.jsx';
+import Logo from '../../../assetsJSX/Logo.jsx';
 
 const ExperienceSection = () => (
   <div className="experience-section">
@@ -16,7 +16,7 @@ const ExperienceSection = () => (
           <Logo size={40} className="third-logo" />
           <Logo size={56} className="fourth-logo" />
         </div>
-        <img src="/src/assets/phones/phone_4.png" alt="phone1 img" loading="lazy" />
+        <img src="/assets/phones/phone_4.png" alt="phone1 img" loading="lazy" />
       </div>
       <div className="text-box">
         <h3>

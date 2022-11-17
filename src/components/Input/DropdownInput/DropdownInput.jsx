@@ -20,7 +20,7 @@ const DropdownInput = ({ title, placeholder, items, height }) => {
       <img
         style={{ rotate: isOpen && '180deg' }}
         className="dropdown-arrow"
-        src="/src/assets/icons/little_arrow.svg"
+        src="/assets/icons/little_arrow.svg"
         alt="arrow"
       />
       {isOpen && (

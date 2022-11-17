@@ -7,7 +7,7 @@ const FutureSection = () => (
       <br />
       OMNI the audio marketplace
     </h2>
-    <img src="/src/assets/backgrounds/vector-map.svg" alt="Vector map" loading="lazy" />
+    <img src="/assets/backgrounds/vector-map.svg" alt="Vector map" loading="lazy" />
   </div>
 );
 

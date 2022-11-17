@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
-import LogoWithText from '../../assets/LogoWithText.jsx';
+import LogoWithText from '../../assetsJSX/LogoWithText.jsx';
 import './header.scss';
-import LinkedinIcon from '../../assets/icons/LinkedinIcon.jsx';
-import TwitterIcon from '../../assets/icons/TwitterIcon.jsx';
+import LinkedinIcon from '../../assetsJSX/LinkedinIcon.jsx';
+import TwitterIcon from '../../assetsJSX/TwitterIcon.jsx';
 import Button from '../Button/Button.jsx';
 import { COMING_SOON_ROUTE, MAIN_ROUTE } from '../../utils/constants.js';
 

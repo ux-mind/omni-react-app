@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const Checkbox = ({ isChecked, setIsChecked, className }) => (
   <div className={`checkbox-input ${className}`}>
     <div className="personal-checkbox" onClick={() => setIsChecked(!isChecked)}>
-      {isChecked && <img src="/src/assets/icons/checkIcon.svg" alt="check" />}
+      {isChecked && <img src="/assets/icons/checkIcon.svg" alt="check" />}
     </div>
     <p>
       You agree to our friendly&nbsp;

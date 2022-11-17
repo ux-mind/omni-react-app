@@ -1,6 +1,6 @@
 import './formSection.scss';
 import { useState } from 'react';
-import Logo from '../../../assets/Logo.jsx';
+import Logo from '../../../assetsJSX/Logo.jsx';
 import Input from '../../../components/Input/Input.jsx';
 import Button from '../../../components/Button/Button.jsx';
 import Checkbox from '../../../components/Checkbox/Checkbox.jsx';

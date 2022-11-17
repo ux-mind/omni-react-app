@@ -1,5 +1,5 @@
 import './controlSection.scss';
-import Logo from '../../../assets/Logo.jsx';
+import Logo from '../../../assetsJSX/Logo.jsx';
 
 const ControlSection = () => (
   <div className="control-section">
@@ -30,7 +30,7 @@ const ControlSection = () => (
         <Logo size={56} className="fourth-logo" />
         <Logo size={40} className="fifth-logo" />
         <Logo size={20} className="sixth-logo" />
-        <img src="/src/assets/phones/phone_3.png" alt="phone 3" />
+        <img src="/assets/phones/phone_3.png" alt="phone 3" />
       </div>
     </div>
   </div>

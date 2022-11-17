@@ -30,9 +30,9 @@ const MainPage = () => (
       <ControlSection />
       <ExperienceSection />
       <BubblehouseSection />
-      <FormSection />
-      <PhoneOnlySection />
-      <DiversitySection />
+      {/* <FormSection /> */}
+      {/* <PhoneOnlySection /> */}
+      {/* <DiversitySection /> */}
     </Suspense>
   </main>
 );
