@@ -4,17 +4,28 @@ import { useRef, useState } from 'react';
 import * as EmailValidator from 'email-validator';
 import DropdownInput from './DropdownInput/DropdownInput.jsx';
 
-const Input = ({ className = '', title, placeholder, type = 'input', itemsForDropdown, height }) => {
+const Input = ({
+  className = '',
+  title,
+  placeholder,
+  type = 'input',
+  itemsForDropdown,
+  height,
+}) => {
   const [email, setEmail] = useState('');
   const emailRef = useRef();
 
   const checkEmail = (email) => {
     if (!EmailValidator.validate(email) && email !== '') {
-      if (!emailRef.current.classList.contains('error-input')) return emailRef.current.classList.add('error-input');
+      if (!emailRef.current.classList.contains('error-input')) {
+        return emailRef.current.classList.add('error-input');
+      }
       return;
     }
 
-    if (emailRef.current.classList.contains('error-input')) emailRef.current.classList.remove('error-input');
+    if (emailRef.current.classList.contains('error-input')) {
+      emailRef.current.classList.remove('error-input');
+    }
   };
 
   return (
@@ -36,24 +47,22 @@ const Input = ({ className = '', title, placeholder, type = 'input', itemsForDro
             name={title}
             placeholder={placeholder}
           />
-        )
-          // eslint-disable-next-line no-nested-ternary
-          : type === 'text-area' ? (
-            <textarea
-              style={{ height: `${height - 30}px` }}
-              name="title"
-              cols="80"
-              rows="7"
-            />
-          )
-            : (
-              <DropdownInput
-                items={itemsForDropdown}
-                title={title}
-                placeholder={placeholder}
-                height={height}
-              />
-            )}
+        ) : // eslint-disable-next-line no-nested-ternary
+        type === 'text-area' ? (
+          <textarea
+            style={{ height: `${height - 30}px` }}
+            name="title"
+            cols="80"
+            rows="7"
+          />
+        ) : (
+          <DropdownInput
+            items={itemsForDropdown}
+            title={title}
+            placeholder={placeholder}
+            height={height}
+          />
+        )}
       </div>
     </div>
   );

@@ -1,5 +1,6 @@
 import './comingSoonPage.scss';
-import { useState } from 'react';
+import axios from 'axios';
+import { useState, useRef } from 'react';
 import Input from '../../components/Input/Input.jsx';
 import Checkbox from '../../components/Checkbox/Checkbox.jsx';
 import Button from '../../components/Button/Button.jsx';
@@ -24,8 +25,34 @@ const itemsForDropdown = [
   },
 ];
 
+const PHP_URL = '../send.php';
+
 const ComingSoonPage = () => {
   const [isChecked, setIsChecked] = useState(false);
+
+  const formRef = useRef(null);
+
+  const handleSubmit = async () => {
+    const form = formRef.current;
+
+    if (form) {
+      const inputs = [
+        ...form.querySelectorAll('input'),
+        ...form.querySelectorAll('textarea'),
+      ];
+
+      const data = {};
+
+      inputs.forEach((input) => {
+        const { value } = input;
+        const name = input.name || 'undefined';
+
+        data[name] = value;
+      });
+
+      await axios.post(PHP_URL, data);
+    }
+  };
 
   return (
     <main className="comingSoon-section">
@@ -33,7 +60,7 @@ const ComingSoonPage = () => {
         <div className="comingSoon-box-left">
           <h2>The future of audio is coming</h2>
           <p>Send your request and we will answer you</p>
-          <div className="form-frame">
+          <div className="form-frame" ref={formRef}>
             <Input
               className="input-sizing"
               type="dropdown"
@@ -57,7 +84,12 @@ const ComingSoonPage = () => {
               setIsChecked={setIsChecked}
               isChecked={isChecked}
             />
-            <Button className="btn-sizing" title="Send" />
+            <Button
+              className="btn-sizing"
+              title="Send"
+              onClick={handleSubmit}
+              type="button"
+            />
           </div>
         </div>
         <div className="comingSoon-box-right">
