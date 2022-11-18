@@ -46,6 +46,7 @@ const Input = ({
             type="text"
             name={title}
             placeholder={placeholder}
+            required
           />
         ) : // eslint-disable-next-line no-nested-ternary
         type === 'text-area' ? (

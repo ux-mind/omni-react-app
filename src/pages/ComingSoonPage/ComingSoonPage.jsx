@@ -5,6 +5,7 @@ import Input from '../../components/Input/Input.jsx';
 import Checkbox from '../../components/Checkbox/Checkbox.jsx';
 import Button from '../../components/Button/Button.jsx';
 import Counter from '../../components/Counter/Counter.jsx';
+import Modal from '../../components/Modal/Modal.jsx';
 
 const itemsForDropdown = [
   {
@@ -28,7 +29,8 @@ const itemsForDropdown = [
 const PHP_URL = '../send.php';
 
 const ComingSoonPage = () => {
-  const [isChecked, setIsChecked] = useState(false);
+  const [isChecked, setIsChecked] = useState(true);
+  const [modalOpened, setModalOpened] = useState(false);
 
   const formRef = useRef(null);
 
@@ -50,7 +52,13 @@ const ComingSoonPage = () => {
         data[name] = value;
       });
 
-      await axios.post(PHP_URL, data);
+      const response = await axios.post(PHP_URL, data);
+
+      setModalOpened(true);
+
+      if (response && response.status === 200) {
+        setModalOpened(true);
+      }
     }
   };
 
@@ -97,6 +105,12 @@ const ComingSoonPage = () => {
           <Counter />
         </div>
       </div>
+      <Modal
+        isOpened={modalOpened}
+        setIsOpened={setModalOpened}
+        text="EPIC! WE WILL BE IN TOUCH"
+        btnText="Great!"
+      />
     </main>
   );
 };

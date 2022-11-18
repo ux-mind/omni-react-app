@@ -9,32 +9,41 @@ const Footer = () => (
       <br />
       We will protect and preserve your most precious memories
     </h2>
-    <div className="footer-input-box">
+    {/* <div className="footer-input-box">
       <div className="input-with-icon">
         <img src="/assets/icons/mailIcon.svg" alt="mail" />
         <input type="email" name="email" placeholder="Enter your email" />
       </div>
       <Button className="footer-btn" title="Submit" />
-    </div>
+    </div> */}
     <Button className="footer-btn-second" title="Submit" />
     <p>
-      OMNI is a time capsule that will
-      preserve and protect the most cherished
+      OMNI is a time capsule that will preserve and protect the most cherished
       and precious sound memories of people.
     </p>
     <ul>
       <li>
-        <a href="/">
+        <a
+          href="https://www.linkedin.com/in/be-the-ball/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <img src="/assets/icons/linkedIdColorizedIcon.svg" alt="linkedin" />
         </a>
       </li>
       <li>
-        <a href="/">
+        <a
+          href="https://twitter.com/omnibroadcast"
+          target="_blank"
+          rel="noreferrer"
+        >
           <img src="/assets/icons/twitterColorizedIcon.svg" alt="twitter" />
         </a>
       </li>
     </ul>
-    <a href={import.meta.env.VITE_SOME_PRIVACY_POLICY_URL || '/'}>Privacy Policy</a>
+    <a href={import.meta.env.VITE_SOME_PRIVACY_POLICY_URL || '/'}>
+      Privacy Policy
+    </a>
   </footer>
 );
 
