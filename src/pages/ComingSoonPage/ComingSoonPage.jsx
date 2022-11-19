@@ -1,6 +1,6 @@
 import './comingSoonPage.scss';
 import axios from 'axios';
-import { useState, useRef } from 'react';
+import { useState } from 'react';
 import Input from '../../components/Input/Input.jsx';
 import Checkbox from '../../components/Checkbox/Checkbox.jsx';
 import Button from '../../components/Button/Button.jsx';
@@ -32,10 +32,10 @@ const ComingSoonPage = () => {
   const [isChecked, setIsChecked] = useState(true);
   const [modalOpened, setModalOpened] = useState(false);
 
-  const formRef = useRef(null);
+  const handleSubmit = async (e) => {
+    const form = e.target;
 
-  const handleSubmit = async () => {
-    const form = formRef.current;
+    e.preventDefault();
 
     if (form) {
       const inputs = [
@@ -68,7 +68,7 @@ const ComingSoonPage = () => {
         <div className="comingSoon-box-left">
           <h2>The future of audio is coming</h2>
           <p>Send your request and we will answer you</p>
-          <div className="form-frame" ref={formRef}>
+          <form className="form-frame" onSubmit={handleSubmit}>
             <Input
               className="input-sizing"
               type="dropdown"
@@ -92,13 +92,8 @@ const ComingSoonPage = () => {
               setIsChecked={setIsChecked}
               isChecked={isChecked}
             />
-            <Button
-              className="btn-sizing"
-              title="Send"
-              onClick={handleSubmit}
-              type="button"
-            />
-          </div>
+            <Button className="btn-sizing" title="Send" type="submit" />
+          </form>
         </div>
         <div className="comingSoon-box-right">
           <h1>Newchip Investor Day Presentation</h1>

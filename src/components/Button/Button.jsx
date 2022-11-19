@@ -3,16 +3,13 @@ import './button.scss';
 import { Link } from 'react-router-dom';
 import { MAIN_ROUTE } from '../../utils/constants.js';
 
-const Button = ({
-  title,
-  className = '',
-  link = MAIN_ROUTE,
-  type,
-  onClick,
-}) => {
-  if (type === 'button') {
+const Button = ({ title, className = '', link = MAIN_ROUTE, type }) => {
+  if (type === 'button' || type === 'submit') {
     return (
-      <button className={`btn ${className}`} type="button" onClick={onClick}>
+      <button
+        className={`btn ${className}`}
+        type={type === 'button' ? 'button' : 'submit'}
+      >
         <span>{title}</span>
       </button>
     );
@@ -35,8 +32,6 @@ Button.propTypes = {
   link: PropTypes.string,
   // eslint-disable-next-line react/require-default-props
   type: PropTypes.string,
-  // eslint-disable-next-line react/require-default-props
-  onClick: PropTypes.func,
 };
 
 export default Button;
