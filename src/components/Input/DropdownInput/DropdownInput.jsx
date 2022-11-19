@@ -2,7 +2,7 @@ import './dropdownInput.scss';
 import PropTypes from 'prop-types';
 import { useState } from 'react';
 
-const DropdownInput = ({ title, placeholder, items, height }) => {
+const DropdownInput = ({ title, placeholder = '', items, height, setItem }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [value, setValue] = useState(placeholder);
 
@@ -31,6 +31,7 @@ const DropdownInput = ({ title, placeholder, items, height }) => {
               className="item"
               onClick={() => {
                 setValue(items[id].title);
+                setItem(items[id].title);
                 setIsOpen(false);
               }}
             >
@@ -51,6 +52,8 @@ DropdownInput.propTypes = {
   items: PropTypes.array.isRequired,
   // eslint-disable-next-line react/require-default-props
   height: PropTypes.number,
+  // eslint-disable-next-line react/require-default-props
+  setItem: PropTypes.func,
 };
 
 export default DropdownInput;

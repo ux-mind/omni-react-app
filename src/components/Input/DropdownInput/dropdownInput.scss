@@ -29,6 +29,7 @@
     -webkit-mask: linear-gradient(90deg, #4832F7, #9357EB, #F65CCB) content-box,
     linear-gradient(90deg, #4832F7, #9357EB, #F65CCB);
     -webkit-mask-composite: xor;
+      mask-composite: exclude;
   }
 
   .item {

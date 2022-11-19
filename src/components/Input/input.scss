@@ -38,6 +38,7 @@
       -webkit-mask: linear-gradient(90deg, #495DF4, #B471FF) content-box,
       linear-gradient(90deg, #495DF4, #B471FF);
       -webkit-mask-composite: xor;
+      mask-composite: exclude;
       backdrop-filter: blur(14.2958px);
     }
 
@@ -69,5 +70,22 @@
       line-height: 24px;
       color: #FBFBFF;
     }
+  }
+}
+
+.error-span{
+  position: absolute;
+  bottom: -20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+
+  span {
+    margin-left: 3px;
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: 10px !important;
+    color: #EB5757;
+    line-height: 22px;
   }
 }

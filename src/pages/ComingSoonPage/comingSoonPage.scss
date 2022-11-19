@@ -60,6 +60,7 @@
           -webkit-mask: linear-gradient(90deg, #4832F7, #9357EB, #F65CCB) content-box,
           linear-gradient(90deg, #4832F7, #9357EB, #F65CCB);
           -webkit-mask-composite: xor;
+      mask-composite: exclude;
         }
 
         @media (max-width: 550px) {
@@ -153,7 +154,7 @@
         font-size: 64px !important;
         line-height: 80px;
         text-transform: uppercase;
-        
+
         @media (max-width: 1250px) {
           font-size: 5vw !important;
           line-height: 60px;
@@ -170,5 +171,92 @@
         }
       }
     }
+  }
+}
+
+
+.success-popup {
+  position: absolute;
+  z-index: 15;
+  padding: 70px 50px;
+  max-width: 430px;
+  backdrop-filter: blur(15px);
+  border-radius: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(88.06deg, #372B58 -17.17%, #2E3156 128.48%);
+
+  &::before {
+    position: absolute;
+    padding: 1.7px;
+    content: "";
+    inset: calc(0px - 1.7px);
+    border-radius: 48px;
+    background: linear-gradient(90deg, #4832F7, #9357EB, #F65CCB);
+    -webkit-mask: linear-gradient(90deg, #4832F7, #9357EB, #F65CCB) content-box,
+    linear-gradient(90deg, #4832F7, #9357EB, #F65CCB);
+    -webkit-mask-composite: xor;
+      mask-composite: exclude;
+  }
+
+  .btn {
+    position: relative;
+    width: 185px;
+    height: 38px;
+    background: linear-gradient(91deg, #5054EE, #9F1EEE);
+    transform: skew(-15deg);
+    border: none;
+    border-radius: 2.7px;
+    cursor: pointer;
+
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      border-radius: 2.7px;
+      content: '';
+      width: 100%;
+      height: inherit;
+      opacity: 0;
+      background: linear-gradient(91deg, #9F1EEE, #5054EE);
+      transition: 200ms linear;
+    }
+
+    &:hover {
+      &:before {
+        opacity: 1;
+      }
+    }
+
+    &:active {
+      &:before {
+        opacity: 0.1;
+      }
+    }
+
+    span {
+      width: 100%;
+      height: 38px;
+      transform: skew(15deg);
+      font-family: 'Gilroy', sans-serif;
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-transform: uppercase;
+    }
+  }
+
+  p {
+    font-weight: 500;
+    font-size: 14px !important;
+    line-height: 32px;
+  }
+
+  .popup-btn {
+    margin-top: 15px;
   }
 }

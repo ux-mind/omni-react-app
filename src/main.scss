@@ -80,7 +80,23 @@ body {
   .error-input {
 
     &::before {
-      background: red !important;
+      background: #B43636 !important;
+    }
+  }
+
+  button {
+    &:hover {
+      &:before {
+        opacity: 1;
+      }
+    }
+
+    &:active {
+      box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+      &:before {
+        opacity: 0.1;
+      }
     }
   }
 }
