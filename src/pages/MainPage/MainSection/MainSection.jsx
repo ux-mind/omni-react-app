@@ -13,7 +13,7 @@ const MainSection = () => (
       <p>
         Join the audio revolution!
       </p>
-      <Button className="main-section-btn" title="radio us" />
+      <Button className="main-section-btn" title="radio us" currentPageHref="#form" />
     </div>
   </div>
 );

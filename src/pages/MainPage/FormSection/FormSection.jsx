@@ -77,7 +77,7 @@ const FormSection = () => {
         Do you see a need to disrupt broadcasting?
         We would love to empower you!
       </h2>
-      <form className="form-frame">
+      <form className="form-frame" id="form">
         <div className="form-frame-box">
           <h4>Radio Waves Are Open</h4>
           {window.innerWidth <= 450 ? (

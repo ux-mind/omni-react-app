@@ -42,6 +42,7 @@
         padding: 40px 0 56px;
         max-width: 940px;
         backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
         border-radius: 33px;
         display: flex;
         flex-direction: column;
@@ -181,6 +182,7 @@
   padding: 70px 50px;
   max-width: 430px;
   backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
   border-radius: 48px;
   display: flex;
   flex-direction: column;

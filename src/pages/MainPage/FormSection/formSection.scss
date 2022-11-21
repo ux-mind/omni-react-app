@@ -26,6 +26,7 @@
     max-width: 940px;
     height: 780px;
     backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
     border-radius: 48px;
     background: linear-gradient(87.3deg,
             rgba(73, 93, 244, 0.05) -2.43%,
@@ -220,6 +221,7 @@ p {
   padding: 70px 50px;
   max-width: 430px;
   backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
   border-radius: 48px;
   display: flex;
   flex-direction: column;

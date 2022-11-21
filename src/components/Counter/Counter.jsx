@@ -8,6 +8,8 @@ const countTime = () => {
   const dateNow = moment().utcOffset('-05:00').format();
   const dateEnd = moment('2022-11-21T12:55:00+03:00');
 
+  if (dateEnd.diff(dateNow, dateEnd) <= 0) return { days: 0, hours: 0, minutes: 0 };
+
   return {
     days: dateEnd.diff(dateNow, 'days'),
     hours: dateEnd.diff(dateNow, 'hours') % 24,
@@ -22,6 +24,8 @@ const Counter = () => {
   const countDate = () => {
     setDateCount((prev) => {
       let { days, hours, minutes } = prev;
+
+      if (days <= 0 && hours <= 0 && minutes <= 0) return { days: 0, hours: 0, minutes: 0 };
 
       if (minutes !== 0) {
         minutes--;
@@ -39,7 +43,7 @@ const Counter = () => {
   };
 
   useEffect(() => {
-    const counterDate = setInterval(countDate, 60000);
+    const counterDate = setInterval(countDate, 2000);
 
     return () => clearInterval(counterDate);
   }, []);

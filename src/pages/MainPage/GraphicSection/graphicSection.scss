@@ -41,6 +41,7 @@
       display: flex;
       justify-content: space-between;
       backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
       border-radius: 48px;
       background: linear-gradient(87.3deg,
               rgba(73, 93, 244, 0.05) -2.43%,
@@ -143,6 +144,7 @@
       .description {
 
         &-container {
+          position: relative;
           width: 336px;
           margin: 15px auto 0;
           padding: 25px 0 20px;
@@ -150,12 +152,13 @@
           flex-direction: column;
           align-items: center;
           backdrop-filter: blur(15px);
+          -webkit-backdrop-filter: blur(15px);
           border-radius: 48px;
           background: linear-gradient(87.3deg,
                   rgba(73, 93, 244, 0.05) -2.43%,
                   rgba(180, 113, 255, 0.05) 84.8%);
 
-          &::before {
+          &:before {
             position: absolute;
             padding: 1.7px;
             content: "";

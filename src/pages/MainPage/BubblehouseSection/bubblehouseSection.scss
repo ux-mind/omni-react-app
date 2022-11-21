@@ -111,7 +111,7 @@
       }
 
       p {
-        max-width: 400px;
+        max-width: 300px;
         margin-top: 8px;
         font-weight: 500;
         font-size: 18px;
@@ -131,6 +131,7 @@
       max-width: 430px;
       height: 386px;
       backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
       border-radius: 48px;
       background: linear-gradient(87.3deg,
               rgba(73, 93, 244, 0.05) -2.43%,
