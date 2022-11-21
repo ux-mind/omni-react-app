@@ -43,7 +43,7 @@ const Counter = () => {
   };
 
   useEffect(() => {
-    const counterDate = setInterval(countDate, 2000);
+    const counterDate = setInterval(countDate, 60000);
 
     return () => clearInterval(counterDate);
   }, []);
