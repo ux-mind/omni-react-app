@@ -1,0 +1,33 @@
+.future-section {
+  width: 100%;
+  margin: 298px auto 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (max-width: 920px) {
+    margin: 180px auto 50px;
+  }
+
+  h2 {
+    max-width: 700px;
+    text-align: center;
+    line-height: 50px;
+
+    @media (max-width: 500px) {
+      font-size: 24px !important;
+      line-height: 32px;
+    }
+  }
+
+  img {
+    max-width: 1417px;
+    margin-top: -46px;
+    width: 95%;
+    min-height: 416px;
+
+    @media (max-width: 500px) {
+      margin-top: -100px;
+    }
+  }
+}

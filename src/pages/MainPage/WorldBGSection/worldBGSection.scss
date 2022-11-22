@@ -1,0 +1,19 @@
+.map {
+
+  &-section {
+    margin: 66px auto 200px;
+    width: 100%;
+
+    @media (max-width: 920px) {
+      margin: 120px auto;
+    }
+  }
+
+  &-background {
+    display: block;
+    width: 95%;
+    max-width: 813px;
+    max-height: 390px;
+    margin: 0 auto;
+  }
+}

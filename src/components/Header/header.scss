@@ -15,6 +15,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 920px) {
+      margin: auto 22px;
+    }
   }
 
   &-list {
@@ -32,6 +36,10 @@
   }
 
   &-btn {
-    margin-left: 40px;
+    margin-left: 45px;
+
+    @media (max-width: 920px) {
+      display: none;
+    }
   }
 }

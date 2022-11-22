@@ -1,0 +1,30 @@
+.counter {
+  width: 489px;
+  margin-top: 16px;
+
+  @media (max-width: 920px) {
+    margin: 16px auto 0;
+  }
+  
+  @media (max-width: 550px) {
+    width: 329px;
+  }
+
+  p {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  &-box {
+    margin-top: 9px;
+    width: 489px;
+    height: 180px;
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 550px) {
+      width: 329px;
+      height: 130px;
+    }
+  }
+}
