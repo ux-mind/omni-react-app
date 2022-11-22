@@ -1,20 +1,20 @@
 import './counter.scss';
 import { useEffect, useMemo, useState } from 'react';
-import moment from 'moment';
 import CounterField from './CounterField/CounterField.jsx';
 import Separator from './Separator/Separator.jsx';
 
 const Counter = () => {
   const countTimeMemo = useMemo(() => {
-    const dateNow = moment().utcOffset('-05:00').format();
-    const dateEnd = moment('2022-11-21T12:55:00+03:00');
+    const startDate = new Date();
+    const endDate = new Date(Date.UTC(2022, 10, 21, 12, 55, 0));
+    const diff = (endDate.getTime() - (5 * 3600 * 1000)) - startDate.getTime();
 
-    if (dateEnd.diff(dateNow, 'minute') <= 0) return { days: 0, hours: 0, minutes: 0 };
+    if (diff <= 0) return { days: 0, hours: 0, minutes: 0 };
 
     return {
-      days: dateEnd.diff(dateNow, 'days'),
-      hours: dateEnd.diff(dateNow, 'hours') % 24,
-      minutes: dateEnd.diff(dateNow, 'minutes') % 60,
+      days: Math.trunc(diff / (1000 * 3600 * 24)),
+      hours: Math.trunc(diff / (1000 * 3600)) % 24,
+      minutes: Math.trunc(diff / (1000 * 60)) % 60,
     };
   }, []);
 
@@ -43,6 +43,9 @@ const Counter = () => {
   };
 
   useEffect(() => {
+    const { days, hours, minutes } = dateCount;
+    if (days === 0 && hours === 0 && minutes === 0) return;
+
     const counterDate = setInterval(countDate, 60000);
 
     return () => clearInterval(counterDate);
