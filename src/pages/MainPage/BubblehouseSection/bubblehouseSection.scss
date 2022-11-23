@@ -173,7 +173,23 @@
 
         img {
           width: 280px;
+          margin-bottom: 0;
           margin-left: -30px;
+          animation: coinAnimation 3s ease-in-out infinite;
+
+          @keyframes coinAnimation {
+            0% {
+              margin-bottom: 0;
+            }
+
+            50% {
+              margin-bottom: 30px;
+            }
+
+            100% {
+              margin-bottom: 0;
+            }
+          }
 
           @media (max-width: 600px) {
             width: 60vw;

@@ -28,7 +28,7 @@ const itemsForDropdown = [
 ];
 
 const ComingSoonPage = () => {
-  const [isChecked, setIsChecked] = useState(false);
+  const [isChecked, setIsChecked] = useState(true);
   const [showPopup, setShowPopup] = useState(false);
   const [isError, setIsError] = useState(false);
   const [type, setType] = useState('interest');
@@ -87,11 +87,14 @@ const ComingSoonPage = () => {
               isChecked={isChecked}
             />
             <button
-              className="btn btn-sizing"
+              disabled={!isChecked}
+              className={`btn btn-sizing ${isChecked || 'disabled-btn'}`}
               type="button"
               onClick={() => {
-                checkBeforeMailSend();
-                setShowPopup(true);
+                if (isChecked) {
+                  checkBeforeMailSend();
+                  setShowPopup(true);
+                }
               }}
             >
               <span>Send</span>

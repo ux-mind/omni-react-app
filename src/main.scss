@@ -99,4 +99,17 @@ body {
       }
     }
   }
+
+  .disabled-btn {
+    opacity: 0.3 !important;
+    cursor: default !important;
+
+    &:before {
+      opacity: 0 !important;
+    }
+
+    &:active {
+      box-shadow: none !important;
+    }
+  }
 }

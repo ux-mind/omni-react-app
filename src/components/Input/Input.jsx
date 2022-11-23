@@ -15,10 +15,19 @@ const Input = ({
 }) => {
   const [email, setEmail] = useState('');
   const [string, setString] = useState('');
+  const [message, setMessage] = useState('');
   const [highlightError, setHighlightError] = useState(false);
 
   const setErrorStyle = () => {
     if (string === '') {
+      return setHighlightError(true);
+    }
+
+    setHighlightError(false);
+  };
+
+  const setErrorStyleMessage = () => {
+    if (message === '') {
       return setHighlightError(true);
     }
 
@@ -91,13 +100,28 @@ const Input = ({
           )
           // eslint-disable-next-line no-nested-ternary
             : type === 'text-area' ? (
-              <textarea
-                style={{ height: `${height - 30}px` }}
-                name="title"
-                cols="80"
-                rows="7"
-                onChange={(e) => setItem(e.target.value)}
-              />
+              <>
+                <textarea
+                  style={{ height: `${height - 30}px` }}
+                  value={message}
+                  onChange={(e) => {
+                    setItem(e.target.value);
+                    setMessage(e.target.value);
+                  }}
+                  onBlur={() => setErrorStyleMessage()}
+                  name="title"
+                  cols="80"
+                  rows="7"
+                />
+                {highlightError && (
+                  <div className="error-span">
+                    <img style={{ display: 'block' }} width={10} height={10} src="public/assets/icons/error.svg" alt="" />
+                    <span>
+                      Fill message please
+                    </span>
+                  </div>
+                )}
+              </>
             )
               : (
                 <DropdownInput

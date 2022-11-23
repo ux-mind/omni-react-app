@@ -47,17 +47,17 @@ const Footer = () => {
       </p>
       <ul>
         <li>
-          <a href={import.meta.env.VITE_SOME_LINKEDIN_URL || '/'}>
+          <a href={import.meta.env.VITE_SOME_LINKEDIN_URL || '/'} target="_blank" rel="noreferrer">
             <img src="/assets/icons/linkedIdColorizedIcon.svg" alt="linkedin" />
           </a>
         </li>
         <li>
-          <a href={import.meta.env.VITE_SOME_TWITTER_URL || '/'}>
+          <a href={import.meta.env.VITE_SOME_TWITTER_URL || '/'} target="_blank" rel="noreferrer">
             <img src="/assets/icons/twitterColorizedIcon.svg" alt="twitter" />
           </a>
         </li>
       </ul>
-      <a href={import.meta.env.VITE_SOME_PRIVACY_POLICY_URL || '/'}>Privacy Policy</a>
+      <a href={import.meta.env.VITE_SOME_PRIVACY_POLICY_URL || '/'} target="_blank" rel="noreferrer">Privacy Policy</a>
     </footer>
   );
 };

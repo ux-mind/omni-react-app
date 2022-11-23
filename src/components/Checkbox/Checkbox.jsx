@@ -8,7 +8,7 @@ const Checkbox = ({ isChecked, setIsChecked, className }) => (
     </div>
     <p>
       You agree to our friendly&nbsp;
-      <a href={import.meta.env.VITE_SOME_PRIVACY_POLICY_URL || '/'}>
+      <a style={{ position: 'relative' }} href={import.meta.env.VITE_SOME_PRIVACY_POLICY_URL || '/'} target="_blank" rel="noreferrer">
         privacy policy.
       </a>
     </p>
