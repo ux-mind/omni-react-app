@@ -6,7 +6,7 @@
   align-items: center;
 
   @media (max-width: 920px) {
-    margin: 195px auto 50px;
+    margin: 80px auto 50px;
   }
 
   h2 {
@@ -99,9 +99,9 @@
 
 
         @media (max-width: 920px) {
+          text-align: center;
           font-size: 5vw !important;
           line-height: 5vw;
-          text-align: left;
         }
 
         @media (max-width: 500px) {
