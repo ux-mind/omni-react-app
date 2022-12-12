@@ -19,10 +19,6 @@
       font-size: 20px !important;
       text-align: center;
       max-width: 541px;
-
-      @media (max-width: 600px) {
-        font-size: 16px !important;
-      }
     }
 
     p:not(:first-child) {
